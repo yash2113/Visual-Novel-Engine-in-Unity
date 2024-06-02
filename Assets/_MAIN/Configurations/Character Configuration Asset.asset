@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39444ecc6ab068b4bbe3fa743ed84468, type: 3}
+  m_Name: Character Configuration Asset
+  m_EditorClassIdentifier: 
+  characters:
+  - name: <mainChar>
+    alias: mc
+    characterType: 0
+    nameColor: {r: 0.80965495, g: 0.48867923, b: 1, a: 1}
+    dialogueColor: {r: 0.4305233, g: 0.7488772, b: 0.9547169, a: 1}
+    nameFont: {fileID: 11400000, guid: 6a888d69a87eec245b2ce096aa58c7b4, type: 2}
+    dialogueFont: {fileID: 11400000, guid: ffa5a4cc46a31cf41b8c4ae60b57f04f, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []
+  - name: Stella
+    alias: s
+    characterType: 1
+    nameColor: {r: 0.5803922, g: 0.9529412, b: 0.53333336, a: 1}
+    dialogueColor: {r: 1, g: 0.75012845, b: 0.49622637, a: 1}
+    nameFont: {fileID: 11400000, guid: 7dae9413b6eca944f84676b3355aa848, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 1f9987afb925cfc46ad034ca97acfba8, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 33
+    sprites:
+      _serializedList:
+      - Key: 1
+        Value: {fileID: 21300000, guid: 489e6738000db8446bb0f2aef3c2e48a, type: 3}
+      - Key: 10
+        Value: {fileID: 21300000, guid: b7037e0d0b5e2454b83b99db489eb617, type: 3}
+      - Key: 11
+        Value: {fileID: 21300000, guid: 685e0739511e869488b49250f3f597a4, type: 3}
+      - Key: 12
+        Value: {fileID: 21300000, guid: 9f2b5fd73dfb2484aaef9022daf1188c, type: 3}
+      - Key: 2
+        Value: {fileID: 21300000, guid: 405becec6a076bb48bc4c7b32b9144a9, type: 3}
+      - Key: 3
+        Value: {fileID: 21300000, guid: 0d087f9e2f3e3fe4f8cbd6371c981de2, type: 3}
+      - Key: 4
+        Value: {fileID: 21300000, guid: d2ee22616444b864baf0972bb44e3203, type: 3}
+      - Key: 5
+        Value: {fileID: 21300000, guid: 705153223ede31b488796eced9656a32, type: 3}
+      - Key: 6
+        Value: {fileID: 21300000, guid: 80ed1c757ae38394599fb7dc9305ac9d, type: 3}
+      - Key: 7
+        Value: {fileID: 21300000, guid: 6c93362170d4e8345a163f70c9cea1f1, type: 3}
+      - Key: 8
+        Value: {fileID: 21300000, guid: 242ff547de1cca840ae4e1c4aa04b0b3, type: 3}
+      - Key: 9
+        Value: {fileID: 21300000, guid: 049be8b7bc0127745970b173228f37e4, type: 3}
+  - name: Elen
+    alias: e
+    characterType: 0
+    nameColor: {r: 0.98490566, g: 0.629968, b: 0.77825785, a: 1}
+    dialogueColor: {r: 0.9924528, g: 0.78094375, b: 0.57487357, a: 1}
+    nameFont: {fileID: 11400000, guid: bbf6bc86227210a459a242ec3708763d, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 95a4c5947ced08741b5936e7cbdf479d, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []
+  - name: Benjamin
+    alias: ben
+    characterType: 0
+    nameColor: {r: 0.7352607, g: 1, b: 0.5641509, a: 1}
+    dialogueColor: {r: 0.6030117, g: 0.887982, b: 0.97735846, a: 1}
+    nameFont: {fileID: 11400000, guid: 83b254bfa7790f94c91f3c3b8fa77413, type: 2}
+    dialogueFont: {fileID: 11400000, guid: e94f9ea549dac6348b79fb33e9451f34, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []
+  - name: Female Student 2
+    alias: fs2
+    characterType: 1
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList:
+      - Key: blush
+        Value: {fileID: 21300000, guid: fb8ffcc53d5fdf7478c76d005391bef2, type: 3}
+      - Key: happy
+        Value: {fileID: 21300000, guid: df280f1f06751d94eab80822a9a78e3d, type: 3}
+      - Key: sad
+        Value: {fileID: 21300000, guid: a87d3431b34b5024e84ff21358b4fbd6, type: 3}
+      - Key: surprised
+        Value: {fileID: 21300000, guid: c76866b235f5a6d439dc6ef13d8e4ee4, type: 3}
+      - Key: upset
+        Value: {fileID: 21300000, guid: 32dd9e88cd28cb145bbd0a11e0fa4e4b, type: 3}
+  - name: Raelin
+    alias: r
+    characterType: 2
+    nameColor: {r: 0.38422924, g: 0.84958845, b: 0.94716984, a: 1}
+    dialogueColor: {r: 0.64782244, g: 0.41491634, b: 0.8490566, a: 1}
+    nameFont: {fileID: 11400000, guid: 331c693353005d543b09fe1e949696c5, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 83b254bfa7790f94c91f3c3b8fa77413, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList:
+      - Key: A1
+        Value: {fileID: -539901293, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A2
+        Value: {fileID: 371039983, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Blush
+        Value: {fileID: -231494423, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Default
+        Value: {fileID: -831843799, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Embarrassed
+        Value: {fileID: -12134526, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Guilty
+        Value: {fileID: 1799884572, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Happy
+        Value: {fileID: -861763730, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Laugh
+        Value: {fileID: 752875108, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Scared
+        Value: {fileID: 1148731873, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Scold
+        Value: {fileID: 877658820, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Shocked
+        Value: {fileID: -819501888, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: A_Stern
+        Value: {fileID: 1930344441, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B1
+        Value: {fileID: 2143271235, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B2
+        Value: {fileID: -984643779, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Blush
+        Value: {fileID: 455040721, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Default
+        Value: {fileID: 2079976379, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Embarrassed
+        Value: {fileID: -899087398, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Guilty
+        Value: {fileID: -1818594040, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Happy
+        Value: {fileID: 1731016576, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Laugh
+        Value: {fileID: -810301392, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Scared
+        Value: {fileID: 2089198746, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Scold
+        Value: {fileID: 1533307292, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Shocked
+        Value: {fileID: -1330446141, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+      - Key: B_Stern
+        Value: {fileID: -1720575887, guid: 418997cd131ebf84fac6b738543fe03f, type: 3}
+  - name: Generic
+    alias: gen
+    characterType: 2
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList:
+      - Key: Girl
+        Value: {fileID: 1080889024, guid: 6c007007286b401479daf6bba1200421, type: 3}
+      - Key: Guard
+        Value: {fileID: -1957405950, guid: 6c007007286b401479daf6bba1200421, type: 3}
+      - Key: Man
+        Value: {fileID: -964242304, guid: 6c007007286b401479daf6bba1200421, type: 3}
+      - Key: Monk
+        Value: {fileID: 868266631, guid: 6c007007286b401479daf6bba1200421, type: 3}
+  - name: Mao
+    alias: mao
+    characterType: 3
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []
+  - name: Koharu
+    alias: ko
+    characterType: 3
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []
+  - name: Natori
+    alias: nat
+    characterType: 3
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []
+  - name: Rice
+    alias: ri
+    characterType: 3
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList: []

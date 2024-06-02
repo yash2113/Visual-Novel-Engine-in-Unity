@@ -1,0 +1,16 @@
+
+enter Stella [0:4] "Hi, who do think will win the champions league?"
+
+CreateCharacter(Raelin)
+
+SetLayerMedia(background shrine)
+
+Raelin.Move(1 -spd 0.3)
+
+enter Raelin [0:A1,1:A_Laugh] "I think real will win the champions league."
+
+Stella "But what about Marco?"
+
+Raelin "What about Kroos?"
+
+Stella "He already won 5, just let this fairy tale run of dortmund win"

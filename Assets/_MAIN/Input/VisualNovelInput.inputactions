@@ -1,0 +1,56 @@
+{
+    "name": "VisualNovelInput",
+    "maps": [
+        {
+            "name": "General",
+            "id": "64205d1a-00ea-47a8-94ed-acdec37c3c48",
+            "actions": [
+                {
+                    "name": "Next",
+                    "type": "Button",
+                    "id": "186e8253-d50a-4675-bf13-011e41b27204",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f0a1514c-ebd0-4f97-afad-f4cc0c9295e6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "abf2554a-6ef1-4627-a348-d2a954c87a21",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "265c9c50-7019-40d9-b6b2-b3d7271e7f70",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
