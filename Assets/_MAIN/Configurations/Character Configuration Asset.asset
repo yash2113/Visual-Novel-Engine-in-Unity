@@ -224,3 +224,38 @@ MonoBehaviour:
     dialogueFontScale: 60
     sprites:
       _serializedList: []
+  - name: Conductor
+    alias: c
+    characterType: 1
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 60
+    sprites:
+      _serializedList:
+      - Key: 1
+        Value: {fileID: 21300000, guid: 489e6738000db8446bb0f2aef3c2e48a, type: 3}
+      - Key: 10
+        Value: {fileID: 21300000, guid: b7037e0d0b5e2454b83b99db489eb617, type: 3}
+      - Key: 11
+        Value: {fileID: 21300000, guid: 685e0739511e869488b49250f3f597a4, type: 3}
+      - Key: 12
+        Value: {fileID: 21300000, guid: 9f2b5fd73dfb2484aaef9022daf1188c, type: 3}
+      - Key: 2
+        Value: {fileID: 21300000, guid: 405becec6a076bb48bc4c7b32b9144a9, type: 3}
+      - Key: 3
+        Value: {fileID: 21300000, guid: 0d087f9e2f3e3fe4f8cbd6371c981de2, type: 3}
+      - Key: 4
+        Value: {fileID: 21300000, guid: d2ee22616444b864baf0972bb44e3203, type: 3}
+      - Key: 5
+        Value: {fileID: 21300000, guid: 705153223ede31b488796eced9656a32, type: 3}
+      - Key: 6
+        Value: {fileID: 21300000, guid: 80ed1c757ae38394599fb7dc9305ac9d, type: 3}
+      - Key: 7
+        Value: {fileID: 21300000, guid: 6c93362170d4e8345a163f70c9cea1f1, type: 3}
+      - Key: 8
+        Value: {fileID: 21300000, guid: 242ff547de1cca840ae4e1c4aa04b0b3, type: 3}
+      - Key: 9
+        Value: {fileID: 21300000, guid: 049be8b7bc0127745970b173228f37e4, type: 3}

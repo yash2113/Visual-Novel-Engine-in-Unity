@@ -5,12 +5,13 @@ using System;
 using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using System.Linq;
+using VISUALNOVEL;
 
 public class TagManager
 {
     private static readonly Dictionary<string, Func<string>> tags = new Dictionary<string, Func<string>>()
     {
-        { "<mainChar>",      () => "Avira"},
+        { "<mainChar>",      () => VNGameSave.activeFile.playerName},
         { "<time>",          () => DateTime.Now.ToString("hh:mm tt")},
         { "<playerLevel>",   () => "15"},
         { "<input>",         () => InputPanel.instance.lastInput},

@@ -7,7 +7,7 @@ namespace History
     [System.Serializable]
     public class HistoryState
     {
-        public DialogueData dialogueData;
+        public DialogueData dialogue;
         public List<CharacterData> characters;
         public List<AudioData> audio;
         public List<GraphicData> graphics;
@@ -15,7 +15,7 @@ namespace History
         public static HistoryState Capture()
         {
             HistoryState state = new HistoryState();
-            state.dialogueData = DialogueData.Capture();
+            state.dialogue = DialogueData.Capture();
             state.characters = CharacterData.Capture();
             state.audio = AudioData.Capture();
             state.graphics = GraphicData.Capture();
@@ -25,7 +25,10 @@ namespace History
 
         public void Load()
         {
-
+            DialogueData.Apply(dialogue);
+            CharacterData.Apply(characters);
+            AudioData.Apply(audio);
+            GraphicData.Apply(graphics);
         }
 
     }

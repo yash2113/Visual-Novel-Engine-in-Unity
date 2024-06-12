@@ -1,7 +1,10 @@
 using DIALOGUE;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
+using VISUALNOVEL;
 
 public class TestDialogueFiles : MonoBehaviour
 {
@@ -14,25 +17,14 @@ public class TestDialogueFiles : MonoBehaviour
 
     private void StartConversation()
     {
-        List<string> lines = FileManager.ReadTextAsset(fileToRead);
+        string fullPath = AssetDatabase.GetAssetPath(fileToRead);
 
-        //foreach (string line in lines)
-        //{
-        //    if (string.IsNullOrEmpty(line)) continue;
+        int resourcesIndex = fullPath.IndexOf("Resources/");
+        string relativePath = fullPath.Substring(resourcesIndex + 10);
 
-        //    DIALOGUE_LINE dl = DialogueParser.Parse(line);
+        string filePath = Path.ChangeExtension(relativePath, null);
 
-        //    for (int i = 0; i < dl.commandData.commands.Count; i++)
-        //    {
-        //        DL_COMMAND_DATA.Command command = dl.commandData.commands[i];
-        //        Debug.Log($"Command [{i}] '{command.name}' has arguments [{string.Join(",", command.arguments)}]");
-        //    }
-
-        //}
-
-
-
-        DialogueSystem.instance.Say(lines);
+        LoadFile(filePath);
     }
 
     private void Update()
@@ -45,5 +37,23 @@ public class TestDialogueFiles : MonoBehaviour
         {
             DialogueSystem.instance.dialogueContainer.Show();
         }
+    }
+
+    public void LoadFile(string filePath)
+    {
+        List<string> lines = new List<string>();
+        TextAsset file = Resources.Load<TextAsset>(filePath);
+
+        try
+        {
+            lines = FileManager.ReadTextAsset(file);
+        }
+        catch
+        {
+            Debug.LogError($"Dialogue file at Path 'Resources/{filePath}' does not exist!");
+            return;
+        }
+
+        DialogueSystem.instance.Say(lines, filePath);
     }
 }

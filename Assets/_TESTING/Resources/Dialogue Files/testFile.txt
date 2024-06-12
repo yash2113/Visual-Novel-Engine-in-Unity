@@ -1,3 +1,10 @@
+PlaySong(Calm2), PlayAmbience(RainyMood)
+
+Narrator "Hey girls! Talk about football"
+
+Narrator "Hey girls! Talk about or nba"
+
+Narrator "Hey girls! Talk about or nfl"
 
 enter Stella [0:4] "Hi, who do think will win the champions league?"
 
@@ -7,10 +14,46 @@ SetLayerMedia(background shrine)
 
 Raelin.Move(1 -spd 0.3)
 
-enter Raelin [0:A1,1:A_Laugh] "I think real will win the champions league."
+enter Raelin [0:A1,1:A_Laugh]  as ??? "I think real will win the champions league."
 
 Stella "But what about Marco?"
 
-Raelin "What about Kroos?"
+Narrator "These girls dont know the hulu power of Real Madrid. But we can understand as they are barca fans."
+
+Raelin as Raelin "What about Kroos?"
+
+Narrator "Stop that! He already has 5.{a} Oops! was I loud."
 
 Stella "He already won 5, just let this fairy tale run of dortmund win"
+
+Narrator "Hey girls! you saw mbappe is going to madrid"
+
+choice "Where should Mbappe Go?"
+{
+	-To Madrid
+		Raelin "Knew it, time to support madrid"
+		Stella "Okay"
+	-To Barcelone
+		Raelin "Nah they broke"
+		Stella "Yeah, dont give me hope"
+}
+
+Stella "Yeah, dont know how my broke club is gonna compete against them"
+
+Raelin " Just change the club you support"
+
+Stella "No you cant!{c} The club you decide to support as a child, you should be with them for better and worse"
+
+Raelin "So you are gonna support them even if they go down"
+
+Stella "Yeah"
+
+Raelin "I dont understand why dont just start supporting the club thats winning"
+
+Stella "Which club do you support"
+
+Raelin "City"
+
+Stella "Thats why"
+
+

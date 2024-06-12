@@ -1,6 +1,7 @@
 using DIALOGUE;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace History
@@ -38,6 +39,44 @@ namespace History
             data.speakerScale = nameText.fontSize;
 
             return data;
+        }
+
+        public static void Apply(DialogueData data)
+        {
+            var ds = DialogueSystem.instance;
+            var dialogueText = ds.dialogueContainer.dialogueText;
+            var nameText = ds.dialogueContainer.nameContainer.nameText;
+
+            dialogueText.text = data.currentDialogue;
+            dialogueText.color = data.dialogueColor;
+            dialogueText.fontSize = data.dialogueScale;
+
+            nameText.text = data.currentSpeaker;
+            if (nameText.text != string.Empty)
+                ds.dialogueContainer.nameContainer.Show();
+            else
+                ds.dialogueContainer.nameContainer.Hide();
+
+            nameText.color = data.speakerNameColor;
+            nameText.fontSize = data.speakerScale;
+
+            //Change in the comments
+            dialogueText.maxVisibleCharacters = data.currentDialogue.Length;
+            dialogueText.ForceMeshUpdate();
+
+            if(data.dialogueFont != dialogueText.font.name)
+            {
+                TMP_FontAsset fontAsset = HistoryCache.LoadFont(data.dialogueFont);
+                if(fontAsset != null) 
+                    dialogueText.font = fontAsset;
+            }
+
+            if (data.speakerFont != dialogueText.font.name)
+            {
+                TMP_FontAsset fontAsset = HistoryCache.LoadFont(data.speakerFont);
+                if (fontAsset != null)
+                    nameText.font = fontAsset;
+            }
         }
 
     }

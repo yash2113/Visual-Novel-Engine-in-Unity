@@ -13,13 +13,14 @@ namespace DIALOGUE
         public DialogueContainer dialogueContainer = new DialogueContainer();
         public ConversationManager conversationManager {  get; private set; }
         private TextArchitect architect;
-        private AutoReader autoReader;
+        public AutoReader autoReader {  get; private set; }
         [SerializeField] private CanvasGroup mainCanvas;
 
         public static DialogueSystem instance { get; private set; }
 
         public delegate void DialogueSystemEvent();
         public event DialogueSystemEvent onUserPrompt_Next;
+        public event DialogueSystemEvent onClear;
 
         public bool isRunningConversation => conversationManager.isRunning;
 
@@ -49,7 +50,8 @@ namespace DIALOGUE
             cgController = new CanvasGroupController(this, mainCanvas);
             dialogueContainer.Initialize();
 
-            if(TryGetComponent(out autoReader))
+            autoReader = GetComponent<AutoReader>();    
+            if(autoReader != null)
                 autoReader.Initialize(conversationManager);
         }
 
@@ -64,6 +66,28 @@ namespace DIALOGUE
         public void OnSystemPrompt_Next()
         {
             onUserPrompt_Next?.Invoke();
+        }
+
+        public void OnSystemPrompt_Clear()
+        {
+            onClear?.Invoke();
+        }
+
+        public void OnStartViewingHistory()
+        {
+            prompt.Hide();
+            autoReader.allowToggle = false;
+            conversationManager.allowUserPrompts = false;
+
+            if (autoReader.isOn)
+                autoReader.Disable();
+        }
+
+        public void OnStopViewingHistory()
+        {
+            prompt.Show();
+            autoReader.allowToggle = true;
+            conversationManager.allowUserPrompts = true;
         }
 
         public void ApplySpeakerDataToDialogueContainer(string speakerName)
@@ -94,8 +118,8 @@ namespace DIALOGUE
             else
             {
                 HideSpeakerName();
-/*                dialogueContainer.nameContainer.nameText.text = "";
-*/            }
+                dialogueContainer.nameContainer.nameText.text = "";
+            }
         }
         public void HideSpeakerName() => dialogueContainer.nameContainer.Hide();
 
@@ -105,9 +129,9 @@ namespace DIALOGUE
             return Say(conversation);
         }
 
-        public Coroutine Say(List<string> lines)
+        public Coroutine Say(List<string> lines, string filePath = "")
         {
-            Conversation conversation = new Conversation(lines);
+            Conversation conversation = new Conversation(lines, file: filePath);
             return conversationManager.StartConversation(conversation);
         }
 

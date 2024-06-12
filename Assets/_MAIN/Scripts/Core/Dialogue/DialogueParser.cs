@@ -14,6 +14,11 @@ namespace DIALOGUE
 
             //Debug.Log($"Speaker = '{speaker}'\nDialogue = '{dialogue}'\nCommands = '{commands}'");
 
+            //We have to inject tags and variables into the speaker and dialogue separately because there are initial checks that have
+            //to be performed.
+            //But command sneed no checks, so we can inject the variables in them right now.
+            commands = TagManager.Inject(commands);
+
             return new DIALOGUE_LINE(rawLine,speaker, dialogue, commands);
         }
 

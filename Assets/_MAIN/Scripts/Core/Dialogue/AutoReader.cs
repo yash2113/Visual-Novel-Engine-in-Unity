@@ -25,6 +25,7 @@ namespace DIALOGUE
         public float speed { get; set; } = 1f;
 
         [SerializeField] private TextMeshProUGUI statusText;
+        [HideInInspector] public bool allowToggle = true;
 
         public void Initialize(ConversationManager conversationManager)
         {
@@ -103,6 +104,9 @@ namespace DIALOGUE
 
         public void Toggle_Auto()
         {
+            if (!allowToggle)
+                return;
+
             skip = false;
 
             if(skip)
@@ -116,11 +120,16 @@ namespace DIALOGUE
                 else
                     Disable();
             }
-            statusText.text = STATUS_TEXT_AUTO;
+
+            if (isOn)
+                statusText.text = STATUS_TEXT_AUTO;
         }
 
         public void Toggle_Skip()
         {
+            if (!allowToggle)
+                return;
+
             skip = true;
 
             if (!skip)
@@ -134,7 +143,9 @@ namespace DIALOGUE
                 else
                     Disable();
             }
-            statusText.text = STATUS_TEXT_SKIP;
+
+            if (isOn)
+                statusText.text = STATUS_TEXT_SKIP;
         }
 
     }
