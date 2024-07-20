@@ -1,0 +1,187 @@
+Stella "Well, the room's clean. Now we can finally start preparing for real missions."
+
+<mainChar> "I sure hope our first mission doesn’t involve more cleaning. My arms feel like jelly."
+
+Hide(Stella)
+
+setlayermedia(background "03_1")
+
+PlaySong(Happy)
+
+narrator "The next day, you wake up with an itch of anticipation." {c}
+
+<mainChar> "Today feels different.{a} Like something big is going to happen.{c} Maybe today I'll finally start my real adventure." {c}
+
+narrator "The school day passes by with classes and routine.{c} You're too excited to pay much attention." {c}
+
+setlayermedia(background clubroom)
+
+narrator "After school, you eagerly make your way to the clubhouse.{c} Stella is already there, staring at the walls." {c}
+
+Show(Stella)
+
+<mainChar> "Hey, Stella. What's the plan? Big mission today?" {c}
+
+Stella.SetSprie(1)
+
+Stella "Shh. Just sit." {c}
+
+narrator "You sit down, waiting.{c} An hour passes in silence." {c}
+
+<mainChar> "So... any minute now, right? Our epic quest begins?" {c}
+
+narrator "Suddenly, the teacher, Ms. Harris, bursts into the room." {c}
+
+StopSong(Shenanigans)
+
+Show(Teacher)
+
+Teacher "Stella! Professor Midnight is missing!" {c}
+
+Stella.SetSprite(7)
+
+narrator "Your eyes widen, thinking this 'Professor Midnight' is some important figure." {c}
+
+<mainChar> "Professor Midnight? {a} Who's Professor Midnight? {a} Some kind of secret agent?" {c}
+
+narrator "Ms. Harris gives a puzzled look but leaves quickly." {c}
+
+Stella "Professor Midnight is very important. We need to find him." {c}
+
+Hide(Teacher)
+
+<mainChar> "Wait, we're chasing a mysterious figure named Professor Midnight? {c} Seriously? {a} I thought we were looking for an artifact or something." {c}
+
+Stella "Trust me, he's important.{a} Grab a drop trap.{a} Let's find him." {c}
+
+<mainChar> "A drop trap? {a} Are we catching a person or playing a weird game?" {c}
+
+setlayermedia(background "Town Street")
+
+narrator "You start your search, moving from place to place." {c}
+
+<mainChar> "Alright, where to first? The park? The library? Maybe he's reading up on how to be a better mysterious figure." {c}
+
+Stella.move(0 -spd 0.5)
+
+Stella "He likes the park. Let's start there." {c}
+
+setlayermedia(background "Park")
+
+narrator "You search around the park, looking under benches and in bushes." {c}
+
+<mainChar> "Professor Midnight! Are you out here plotting world domination?" {c}
+
+Stella "Try being less dramatic. It doesn't help." {c}
+
+<mainChar> "Right, because mysterious figures respond well to calm conversations." {c}
+
+setlayermedia(background "Alleyway")
+
+narrator "You check an alleyway next, shining flashlights into dark corners." {c}
+
+Stella.SetPosition(0.2)
+
+<mainChar> "This is definitely the place for a secretive person. Maybe he's having a secret meeting with other mysterious figures." {c}
+
+Stella "Focus. We need to find him before it gets dark." {c}
+
+setlayermedia(background "SchoolGrounds")
+
+narrator "Back at the school, you search around the grounds." {c}
+
+Stella.SetPosition(0.8)
+
+<mainChar> "Here, Professor Midnight. Come out, come out, wherever you are. We've got important world-saving business to discuss." {c}
+
+Stella "You do realize he can't understand you, right?" {c}
+
+<mainChar> "Oh, he understands. He's just playing hard to get." {c}
+
+narrator "Finally, Stella spots something." {c}
+
+Stella.SetSprite(9)
+
+Stella "There he is! Professor Midnight!" {c}
+
+createcharacter(Midnight -e true)
+Midnight.Setposition(0)
+Midnight.SetSprite("cat walk")
+
+narrator "You look around, trying to spot this mysterious figure, but see only a small cat near a tree." {c}
+
+<mainChar> "Uh, Stella, I think you're mistaken. That's a cat." {c}
+
+Stella "That's Professor Midnight." {c}
+
+<mainChar> "You're telling me we've been chasing a cat this whole time? Seriously?" {c}
+
+Midnight.SetSprite("cat lock")
+Midnight.move(0.6 -spd 0.4)
+
+narrator "The cat looks at you, then bolts down a path." {c}
+
+Stella "Quick, after him!" {c}
+
+narrator "You chase the cat through the city" {c}
+
+<mainChar> "This cat is faster than I expected! Maybe he's training for the feline Olympics." {c}
+
+narrator "You follow the cat through different places: a café, a park, an alley, and finally back to the school grounds." {c}
+
+setlayermedia(background "Cafe")
+
+Hide(Midnight)
+
+<mainChar> "Really? A café? What's next, a cat with a latte?" {c}
+
+Stella "Just keep up." {c}
+
+setlayermedia(background "Park")
+
+<mainChar> "So, Professor Midnight, plotting world domination or just enjoying the scenery?" {c}
+
+Stella "Focus. We're getting close." {c}
+
+setlayermedia(background "Alleyway")
+
+Show(Midnight)
+
+<mainChar> "Dark alleyway, classic mysterious setting. Perfect for a secret cat rendezvous." {c}
+
+Midnight.Setposition(0.6)
+
+Midnight.SetSprite("cat lock")
+
+narrator "Finally, you catch the cat near the school grounds." {c}
+
+Midnight.SetSprite("cat rest")
+
+<mainChar> "Gotcha! Wait, seriously? We were chasing a cat this whole time?" {c}
+
+Stella.SetSprite(9)
+
+narrator "Stella picks up the cat, cradling it in her arms." {c}
+
+Hide(Midnight)
+
+Stella "Professor Midnight is more important than you think." {c}
+
+Stella.SetSprite(11)
+
+<mainChar> "Well, this has been... enlightening. Our grand mission was to catch a cat." {c}
+
+Stella.SetSprite(12)
+
+Stella "Not just any cat. You'll understand soon." {c}
+
+narrator "You head back, confused but strangely amused by the day's events.{c} Your adventure, it seems, is just beginning." {c}
+
+StopSong()
+
+Hide(Stella)
+
+Load("chapter 7")
+
+
+

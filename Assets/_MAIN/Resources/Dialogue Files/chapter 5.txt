@@ -1,0 +1,121 @@
+setlayermedia(background "03_1")
+
+StopSong()
+
+narrator "The next few days pass by without incident.{c} You get no chance to talk to Stella, and the mysterious encounters seem to fade into memory." {c}
+
+PlaySong(classroom)
+
+<mainChar> "Was it all just a weird dream? I mean, I haven't even seen her since then." {c}
+
+narrator "One day, you find a note on your seat."
+
+<mainChar> "Stella - meet me outside clubhouse room 414 after school" {c}
+
+<mainChar> "Finally! It's about time this adventure continues. I have so many questions, especially about those dreams." {c}
+
+StopSong()
+
+setlayermedia(background clubroom)
+
+PlaySong(Happy)
+
+narrator "After school, you eagerly make your way to room 414.{c} As you approach, you see Stella standing outside, clearly waiting for you." {c}
+
+Stella.setPosition(0.3)
+Stella.SetSprite(1)
+
+Show(Stella)
+
+<mainChar> "Hey, Stella. So, what's the plan?" {c}
+
+Stella.SetSprite(11)
+
+Stella "Move in." {c}
+
+<mainChar> "No small talk, huh? Straight to business.{a} I like it." {c}
+
+narrator "She says it without a hint of emotion and leads you inside.{c} The room is full of dust, cobwebs hanging from every corner." {c}
+
+<mainChar> "Ah, yes.{a} The classic mysterious room portal scenario.{c} This is definitely where the magic happens." {c}
+
+narrator "You start laughing at your own joke,{a} but then you notice Stella staring at you." {c}
+
+Stella "Here.{a} Start with this." {c}
+
+narrator "She hands you a cleaner and starts dusting a shelf herself." {c}
+
+<mainChar> "Wait, what?{a} Cleaning?{a} Are you serious?{c} I thought we were going to, I don't know, save the world or something." {c}
+
+Stella "If you want to save the world, you have to start somewhere.{a} Now help me clean." {c}
+
+<mainChar> "Right, because nothing says 'epic adventure' like cleaning a dusty old room." {c}
+
+Stella.SetSprite(1)
+
+Stella "Less sarcasm, more cleaning." {c}
+
+<mainChar> "Yes, ma'am." {c}
+
+narrator "With a sigh, you join in, feeling a bit ridiculous. You both work until evening, the room slowly becoming less of a mess." {c}
+
+<mainChar> "So, seriously, what's this room for?" {c}
+
+Stella.move(1 -spd 0.5)
+
+Stella "It's our meeting place. We need somewhere private to plan." {c}
+
+<mainChar> "Plan what, exactly?" {c}
+
+Stella.SetSprite(11)
+
+Stella "Everything. Training, research, strategy." {c}
+
+<mainChar> "And here I thought we were just going to clean all day." {c}
+
+narrator "Suddenly, a teacher enters. She walks over to Stella with a stern look." {c}
+
+createcharacter(Teacher -e true)
+
+Teacher.setPosition(0.6)
+
+Teacher "You're allowed. Keep it tidy." {c}
+
+Stella "Thank you, Ms. Harris." {c}
+
+narrator "Stella looks happy, and you’re left standing there, confused." {c}
+
+Stella.SetSprite(9)
+
+Hide(Teacher)
+
+<mainChar> "Wait, is the teacher part of our secret save-the-world society? I mean, what kind of—" {c}
+
+narrator "Before you can finish, Stella punches you in the stomach, stopping you mid-sentence." {c}
+
+Stella.SetSprite(11)
+
+<mainChar> "Oof! What was that for?" {c}
+
+Stella "She’s not part of any society.{a} I asked her to approve this room for our club. We had to clean it to use it." {c}
+
+<mainChar> "So... all this time, we were just cleaning?" {c}
+
+Stella "Yes. Now we have a place to meet and plan." {c}
+
+<mainChar> "Well, I feel stupid. Here I was thinking we were about to jump into some grand adventure." {c}
+
+Stella "Adventures aren’t always grand. Sometimes they start with something as mundane as cleaning a room." {c}
+
+<mainChar> "Touché. So, what’s next?" {c}
+
+Stella "Next, we use this room to prepare. There’s much to learn and do. This is just the beginning." {c}
+
+<mainChar> "Alright, alright. I’m in. Let’s see where this goes." {c}
+
+narrator "As you leave the room, you can’t help but laugh at how absurd the situation is.{c} But there's also a sense of excitement.{a} The adventure is just beginning." {c}
+
+StopSong()
+
+Load("chapter 6")
+

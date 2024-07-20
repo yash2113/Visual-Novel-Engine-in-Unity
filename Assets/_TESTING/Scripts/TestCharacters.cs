@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using CHARACTERS;
 using DIALOGUE;
 using System.Collections;
@@ -60,3 +61,4 @@ namespace TESTING
 
     }
 }
+#endif

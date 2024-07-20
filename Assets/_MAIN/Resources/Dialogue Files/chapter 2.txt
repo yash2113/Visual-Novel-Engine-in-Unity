@@ -1,0 +1,75 @@
+setlayermedia(background schoolrooftop)
+
+Show(Stella)
+
+narrator "When you reached the rooftop, Stella was there, looking out over the school grounds.{c} She turned to you as you approached." {c}
+
+Stella.SetSprite(11)
+
+Stella.setPosition(0.5)
+
+Stella "You came.{c} I didn't expect you to actually show up." {c}
+
+<mainChar> "How's your guard doing?{c} Any new threats lately?" {c}
+
+narrator "But seeing her all serious, you just remained silent." {c}
+
+Stella "Do you believe in fantasies?" {c}
+
+<mainChar> "Only if they involve dragons and epic quests.{c} Got any of those up your sleeve?" {c}
+
+narrator "She just shrugged off your witty answer and calmly said," {c}
+
+Stella.SetSprite(1)
+
+Stella "I have to kill you." {c}
+
+narrator "You still couldn't take it seriously and tried another joke." {c}
+
+Stella.SetSprite(7)
+
+<mainChar> "Well, at least make it quick.{c} I've got homework to finish." {c}
+
+hide(Stella)
+
+PlaySong(mysterious)
+
+narrator "Suddenly, your head hurt and you felt dizzy.{c} As you regained consciousness, you found yourself in a strange land" {c}
+
+setlayermedia(background mires)
+
+createcharacter("Monk as Generic" -e true)
+Monk.SetSprite("Monk")
+Monk.setPosition(0.9)
+
+Monk "Are you not too young to be here?" {c}
+
+narrator "Now you were sure, you were dead." {c}
+
+<mainChar> "Where am I? What is this place?" {c}
+
+Monk "This is Mires, a realm between worlds.{c} Few are sent here before their time." {c}
+
+<mainChar> "So... I'm dead?" {c}
+
+Monk "Not exactly.{c} You're in a state of limbo, a place for lost souls and those who have unfinished business." {c}
+
+narrator "You stared at the monk, trying to process his words." {c}
+
+<mainChar> "What unfinished business do I have?{c} I was just helping a classmate with a book." {c}
+
+Monk "There are forces at play that you do not understand.{c} Your journey is just beginning." {c}
+
+narrator "You couldn't help but think back to Stella and the mysterious book.{c} What had you gotten yourself into?" {c}
+
+Hide(Monk)
+
+StopSong()
+
+Load("chapter 3")
+
+
+
+
+
+

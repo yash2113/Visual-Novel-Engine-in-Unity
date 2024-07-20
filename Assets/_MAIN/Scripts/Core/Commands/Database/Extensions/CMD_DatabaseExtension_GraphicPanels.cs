@@ -87,7 +87,7 @@ namespace COMMANDS
                 yield break;
             }
 
-            if(!immediate && blendTexName  != string.Empty)
+            if (!immediate && blendTexName != string.Empty) 
             {
                 blendTex = Resources.Load<Texture>(FilePaths.resources_blendTextures + blendTexName);
             }

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using History;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,3 +24,4 @@ namespace TESTING
         }
     }
 }
+#endif

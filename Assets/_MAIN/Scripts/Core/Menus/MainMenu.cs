@@ -13,6 +13,8 @@ public class MainMenu : MonoBehaviour
     public CanvasGroup mainPanel;
     private CanvasGroupController mainCG;
 
+    private UIConfirmationMenu uiChoiceMenu => UIConfirmationMenu.instance;
+
     private void Awake()
     {
         instance = this;
@@ -21,19 +23,27 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         mainCG = new CanvasGroupController(this, mainPanel);
+
+        AudioManager.instance.StopAllSoundEffects();
+        AudioManager.instance.StopAllTracks();
         AudioManager.instance.PlayTrack(menuMusic, channel: 0, startingVolume: 0.2f, volumeCap: 0.4f);
     }
 
-    public void StartNewGame()
+    public void Click_StartNewGame()
     {
-        VNGameSave.activeFile = new VNGameSave();
-
-        StartCoroutine(StartingGame());
+        uiChoiceMenu.Show("Start a new game?", new UIConfirmationMenu.ConfirmationButton("Yes", StartNewGame), new UIConfirmationMenu.ConfirmationButton("No", null));
     }
 
     public void LoadGame(VNGameSave file)
     {
         VNGameSave.activeFile = file;
+
+        StartCoroutine(StartingGame());
+    }
+
+    private void StartNewGame()
+    {
+        VNGameSave.activeFile = new VNGameSave();
 
         StartCoroutine(StartingGame());
     }
@@ -46,6 +56,7 @@ public class MainMenu : MonoBehaviour
         while(mainCG.isVisible)
             yield return null;
 
+        VN_Configuration.activeConfig.Save();
         UnityEngine.SceneManagement.SceneManager.LoadScene("VisualNovel");
     }
 

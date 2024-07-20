@@ -87,6 +87,8 @@ public class ScreenshotMaster : MonoBehaviour
             filePath = filePath + extension;
         }
 
+        FileManager.TryCreateDirectoryFromPath(filePath);
+
         System.IO.File.WriteAllBytes(filePath, bytes);
     }
 

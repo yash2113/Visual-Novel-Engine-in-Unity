@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using DIALOGUE;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,3 +58,4 @@ public class TestDialogueFiles : MonoBehaviour
         DialogueSystem.instance.Say(lines, filePath);
     }
 }
+#endif

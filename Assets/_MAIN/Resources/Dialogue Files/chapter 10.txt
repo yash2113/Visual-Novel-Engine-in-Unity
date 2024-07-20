@@ -1,0 +1,384 @@
+setlayermedia(background "02_3")
+
+PlaySong(Calm)
+
+narrator "Early Saturday morning. You’re still groggy from a late night of gaming.{c} The doorbell rings abruptly, pulling you out of your sleep." {c}
+
+setlayermedia(background homeEntrance)
+
+<mainChar> "Ugh, who’s ringing the doorbell at this hour?{a} Did I accidentally sign up for a morning wake-up service?" {c}
+
+narrator "You drag yourself out of bed, rubbing your eyes, and shuffle to the door.{c} As you open it, you find Stella standing there with a big grin and a tattered map." {c}
+
+Show(Stella)
+Stella.setPosition(0.5)
+Stella.SetSprite(11)
+
+<mainChar> "Stella?{a} What on earth are you doing here?{c} It’s way too early for visitors." {c}
+
+Stella "Surprise!{c} I was in the neighborhood and thought I’d drop by.{a} Arthur gave me your address." {c}
+
+<mainChar> "Arthur?{a} Of course.{c} Because when I think ‘Saturday morning,’ I definitely think of Arthur handing out addresses like it's a game." {c}
+
+Stella "Yep!{c} Anyway, I need your help with something.{a} It’s going to be epic." {c}
+
+<mainChar> "Epic, huh?{c} Last time epic meant cleaning a dusty room.{a} What’s the adventure this time?" {c}
+
+narrator "Stella breezes past you and heads up the stairs, surveying your house as she goes." {c}
+
+setlayermedia(background homeHallway)
+
+Stella.move(0 -spd 0.5)
+
+<mainChar> "Hey, where do you think you’re going?" {c}
+
+Stella "Just exploring.{c} Nice place you’ve got here.{a} Is this where you keep your superhero costumes?" {c}
+
+<mainChar> "Superhero costumes?{a} No, just a pile of old laundry and a broken gaming console." {c}
+
+setlayermedia(background homeComputer)
+
+narrator "Stella reaches your room and starts laying out the map on your desk." {c}
+
+Stella.SetSprite(9)
+
+<mainChar> "Whoa, whoa!{c} What’s with the map?{a} And why are you in my room?" {c}
+
+Stella "I found this map in my grandma’s attic.{c} Supposedly, it leads to a hidden treasure." {c}
+
+ShowGalleryImage(mapfull)
+
+<mainChar> "This?{a} This is a map?{c} It looks like something my little cousin made for a school project." {c}
+
+Stella "Hey, don’t underestimate it.{c} It might be more valuable than it looks." {c}
+
+HideGalleryImage()
+
+<mainChar> "Oh sure.{a} And I bet the treasure is a box of ancient cereal with a side of dust." {c}
+
+Stella "Actually, it’s supposed to be something really valuable.{a} We just need to follow the map." {c}
+
+<mainChar> "Great.{a} So we’re off on a treasure hunt?{c} What’s next?{a} Pirate ships?" {c}
+
+Stella "Very funny.{c} We need to prepare.{a} Here’s what we need: shovels, a flashlight, and—" {c}
+
+<mainChar> "Let me guess.{a} A metal detector?" {c}
+
+Stella "Exactly!{c} And maybe a first-aid kit.{a} Just in case." {c}
+
+<mainChar> "Perfect.{a} So we’re going to dig up my backyard with a shovel, a flashlight, and a metal detector.{c} And if we find nothing, we’ll have a great story about the day we dug a hole in the yard." {c}
+
+Stella "Exactly!{c} And snacks.{a} Adventures are always better with snacks." {c}
+
+<mainChar> "Snacks?{a} For a treasure hunt?{c} What are we hunting for, a gold-plated sandwich?" {c}
+
+Stella "You never know.{c} It could be anything.{a} And a camera too, in case we find something cool." {c}
+
+<mainChar> "A camera.{a} Great.{c} And should we also bring a stunt double for when this goes terribly wrong?" {c}
+
+Stella.SetSprite(7)
+
+Stella "Very funny.{c} We’re all set.{a} Let’s grab our gear and head out." {c}
+
+<mainChar> "Alright, alright.{c} But if we end up with nothing but mud and blisters, I’m going to expect a nice dinner out of this." {c}
+
+Stella.SetSprite(11)
+
+Stella "Deal!{c} Now, let’s get moving before the adventure is over before it even begins." {c}
+
+StopSong()
+
+setlayermedia(background homeBackyard)
+
+narrator "Both of you head to the backyard, equipped with shovels, a metal detector, a flashlight, snacks, and a camera.{c} You’re both laughing and chatting about the possible outcomes of your backyard adventure." {c}
+
+narrator "After grabbing the mysterious map from Stella, you both set out on your adventure, only to find that the map’s directions are more confusing than a labyrinth of spaghetti." {c}
+
+setlayermedia(background coffeeshop)
+
+PlaySong(townSong)
+
+<mainChar> "Alright, so according to this map, the first stop is supposed to be 'The Old Clock Tower.'{a} But all I see is a coffee shop and a hardware store.{c}"
+
+Stella.SetSprite(7)
+
+Stella.SetPosition(0.2)
+
+Stella "Maybe we took a wrong turn.{a} Or maybe the map's directions are just terrible.{c}"
+
+<mainChar> "A map that looks like it was drawn by a toddler?{a} I’m not surprised.{c} Let’s head to the clock tower and see if it’s even there." {c}
+
+setlayermedia(background pizzaShop)
+
+narrator "After driving through various parts of the city, you arrive at what you think is the clock tower.{c} Except, it’s actually a pizza place with a big clock on the wall." {c}
+
+<mainChar> "Well, this is either a very creative pizza place or we’ve completely misinterpreted the map.{a} Either way, I’m starving." {c}
+
+Stella "This doesn’t look like what we were expecting.{a} Maybe the map is more of a 'suggestion' than an actual guide.{c}"
+
+<mainChar> "A 'suggestion' for what?{a} A treasure hunt or a culinary adventure?{c} Because if it’s the latter, I’m ready for a slice." {c}
+
+setlayermedia(background parksearch)
+
+Stella.SetSprite(11)
+
+narrator "You both decide to move on, following the map’s next vague instruction to a nearby park. Only, it turns out to be a dog park filled with excited pups." {c}
+
+<mainChar> "The map says ‘Head to the park near the old oak tree.’{a} This park has like a dozen oak trees and an army of dogs.{c}"
+
+Stella "We could be here a while.{a} Maybe the map’s idea of ‘near’ is a bit too liberal." {c}
+
+<mainChar> "Or maybe it’s trying to tell us to get lost among the trees and the dogs.{c} Either way, I’m not seeing any treasure here." {c}
+
+narrator "Despite the growing confusion, you follow the map’s next clue to what’s marked as ‘The Abandoned Warehouse,’ which is now an open-air market." {c}
+
+StopSong()
+
+setlayermedia(background warehouse)
+
+PlaySong(mysterious)
+
+<mainChar> "So, ‘Abandoned Warehouse’ is now a bustling flea market.{a} I think we’ve gone from treasure hunting to bargain shopping." {c}
+
+Stella "I’m starting to think the map is just a prank.{a} Or maybe it’s meant to lead us on a wild goose chase." {c}
+
+<mainChar> "A wild goose chase with a side of questionable bargains.{c} Great.{a} Let’s move on to the next spot." {c}
+
+narrator "After passing through several more locations, including a laundromat and a laundromat’s back alley, you finally arrive at the area marked on the map." {c}
+
+setlayermedia(background abandoned)
+
+<mainChar> "Alright, we’re finally here.{c} According to this, it should be right around this run-down street.{c} But all I see is a bunch of closed shops and a few stray cats." {c}
+
+Stella "Looks promising.{a} Or not.{c} This place seems to be exactly what it is: a run-down street." {c}
+
+<mainChar> "Well, if the treasure was hidden in plain sight, I think we’re in the wrong place.{c} Let’s check out the last spot and see if it’s any better." {c}
+
+narrator "You both start examining the area more closely, feeling the sting of disappointment but trying to stay hopeful.{c} The map has led you here, but what you’re supposed to find is still a mystery." {c}
+
+<mainChar> "So far, this adventure has taken us from pizza places to flea markets, and now to this delightful, drab street.{c} I’m starting to think our treasure might be a big joke." {c}
+
+Stella "We can’t give up yet.{a} There has to be something here.{c} Maybe we’re just missing the obvious." {c}
+
+<mainChar> "Or maybe the map’s creator was having a laugh at our expense.{c} Either way, we’ve come this far, so let’s see it through." {c}
+
+StopSong()
+
+narrator "As you both continue to search the area, the sense of adventure begins to feel more like a quest for redemption.{c} The map may have led you astray, but you’re determined to find out what’s at the end of this wild ride." {c}
+
+Stella.SetSprite(9)
+
+PlaySong(Shenanigans)
+
+narrator "You and Stella start digging in the area marked on the map.{c} At first, it seems like a promising spot, but quickly turns into a comedy of errors." {c}
+
+<mainChar> "Alright, let’s get started.{a} This is either going to be a treasure hunt or a massive waste of time." {c}
+
+Stella "With our luck? It’s probably going to be more of the latter.{a} But hey, at least we’ll have a good story." {c}
+
+<mainChar> "Great. Just what I needed—more stories to add to my collection of 'Epic Fails.'{a} Let’s see what we dig up." {c}
+
+narrator "As you both dig, you unearth a series of bizarre and mundane items. Each discovery brings new comments and sarcastic remarks." {c}
+
+Stella.SetSprite(11)
+
+Stella.SetPosition(1)
+
+Stella "Look at this—an old coffee mug.{a} I’m sure it’s worth its weight in gold." {c}
+
+<mainChar> "Perfect! A relic from a forgotten coffee break.{a} I’m sure it’ll make our day." {c}
+
+Stella "Oh, and here’s an old sock.{a} Maybe it’s the missing sock of some famous person." {c}
+
+<mainChar> "A sock with a story.{a} How thrilling.{c} Let’s keep going before we find a pair of pants and a broken TV." {c}
+
+narrator "Hours pass as you both continue to dig up more trash: broken toys, rusted cans, and other discarded items." {c}
+
+<mainChar> "I’m starting to think this whole thing was a wild goose chase.{a} We’ve dug up more garbage than treasure." {c}
+
+Stella "Maybe the map is just a prank.{a} Or maybe we’re just really bad at following directions." {c}
+
+<mainChar> "Great, just what I needed—a reminder that my sense of direction is as reliable as this map." {c}
+
+Stella.SetSprite(1)
+
+narrator "Exhausted and frustrated, you both decide to take a break. During the rest, tensions rise as you pass more sarcastic remarks." {c}
+
+Stella.SetSprite(7)
+
+Stella "You know, I could’ve been at home, binge-watching my favorite show instead of digging through trash." {a}
+
+<mainChar> "I could’ve been playing video games or napping, but no, I’m here digging for something that’s probably a joke." {c}
+
+Stella "We’ve been at this for hours.{a} If we don’t find anything soon, I might just start a new hobby—like collecting trash." {c}
+
+<mainChar> "I’d support that.{a} At least then we’d be collecting something with a purpose." {c}
+
+narrator "As you prepare to leave, you notice Stella looking particularly downhearted.{c} You talk to yourself about the situation, feeling guilty for abandoning the search." {c}
+
+<mainChar> "Look at her.{a} She’s really bummed out. I can’t just leave her here.{c} Even if it means digging up more junk." {c}
+
+narrator "You return to help Stella, and you both resume digging with renewed determination, finding even more absurd and useless items." {c}
+
+Stella.SetSprite(11)
+
+Stella "Well, if we’re going to be digging, we might as well make it worth our while.{a} This place could hide a hundred more coffee mugs." {c}
+
+<mainChar> "Or maybe an old statue of a garden gnome.{a} That would complete the collection." {c}
+
+narrator "Suddenly, an old man appears, shuffling over with a curious look.{c} He’s clearly surprised to see you two digging in an area that hasn’t been used in decades." {c}
+
+Old Man "What are you two doing here?{a} This place has been closed for thirty years.{c} It used to be a waste dump." {c}
+
+Stella.SetSprite(7)
+
+Stella "Oh, great.{a} We’re digging in a waste dump.{c} Just what we needed." {c}
+
+<mainChar> "Of course we are.{a} This whole adventure has been one big pile of—well, trash.{c}"
+
+Old Man "Well, you might want to leave.{a} Or at least stop before you find something really nasty." {c}
+
+Stella "We’re already in too deep.{a} But thanks for the heads-up." {c}
+
+<mainChar> "Yes, thank you for pointing out the obvious.{a} We’ll be sure to avoid any more unpleasant surprises." {c}
+
+narrator "As the old man shuffles away, your shovel bumps into something solid. Both of you get excited and start digging frantically." {c}
+
+<mainChar> "Hold on.{a} We might actually have something here.{c} It’s not just more trash." {c}
+
+Stella.SetSprite(9)
+
+Stella "This is it.{a} It’s got to be something good.{c} We finally hit the jackpot!" {c}
+
+narrator "You both dig up the object and find that it’s a heavy, mysterious box.{c} Excitement and relief wash over you as you carefully lift it out of the hole." {c}
+
+<mainChar> "Well, look at that.{a} It’s an actual find.{c} I think we’ve earned a medal for this." {c}
+
+Stella "Let’s get it outside and see what’s inside.{a} It better not be another coffee mug." {c}
+
+narrator "With great effort, you both carry the box out of the area, thrilled with the prospect of finally uncovering what’s inside." {c}
+
+
+setlayermedia(background parksearch)
+
+narrator "With the mysterious box in hand, you and Stella head to a nearby park to investigate its contents.{c} The box is heavy and awkward, but curiosity drives you both forward." {c}
+
+<mainChar> "Alright, let’s see what’s inside this thing.{a} After all that digging, it better be something spectacular." {c}
+
+Stella.SetSprite(7)
+
+Stella "If it turns out to be another coffee mug or a rusted can, I might just scream.{a} We’ve earned a real find here." {c}
+
+Gadget.SetSprite(oldStero)
+
+Show(Gadget)
+
+narrator "You both carefully open the box, revealing an old, dusty stereo system. It looks like it hasn’t been touched in decades." {c}
+
+<mainChar> "So, we went through all that trouble for an old stereo.{a} I can’t even remember the last time anyone used one of these." {c}
+
+Stella "This is a letdown.{a} Maybe it’s a vintage item worth a fortune." {c}
+
+<mainChar> "Or maybe it's a relic of the past that’s worth about as much as yesterday’s news.{c} Let’s take it to the clubhouse and figure out what to do with it." {c}
+
+StopSong()
+
+setlayermedia(background clubroom)
+
+PlaySong(Calm2)
+
+narrator "Back at the clubhouse, you and Stella continue to examine the stereo, trying to figure out its significance." {c}
+
+Gadget.SetPosition(0.5)
+
+Stella.SetPosition(0.9)
+
+Stella "We spent hours digging up trash to find this.{a} It’s like the universe is mocking us." {c}
+
+<mainChar> "The universe does have a twisted sense of humor.{c} Or maybe it’s just teaching us patience—or how to be professional trash collectors." {c}
+
+Stella "Yeah, well, we need to figure out what to do with it.{a} Any ideas?" {c}
+
+<mainChar> "Not yet.{a} But let’s not give up hope just yet. Maybe it has some hidden value we’re not seeing." {c}
+
+narrator "As you ponder the stereo’s purpose, a scrap dealer passes by and notices the item." {c}
+
+Scrap Dealer "Hey there!{a} What are you doing with that old stereo?{c} It’s been gathering dust for years." {c}
+
+Stella "Uh, well, we were actually trying to figure out if it was something valuable.{a} Turns out, it might just be old junk." {c}
+
+Scrap Dealer "I can take it off your hands.{a} I’ll give you a few bucks for it. It’s not worth much, but it’s something." {c}
+
+<mainChar> "A few bucks sounds better than nothing.{a} Deal." {c}
+
+Hide(Gadget)
+
+narrator "You hand over the stereo to the scrap dealer and receive a small amount of cash in return.{c} Feeling relieved,{c} you and Stella decide to use the money for something more enjoyable." {c}
+
+Stella "Well, that was a waste of time.{a} But at least we got some cash out of it." {c}
+
+<mainChar> "Yeah.{a} Let’s go get some sodas and forget about today’s adventure.{c} I could use a drink and some relaxation." {c}
+
+setlayermedia(background juicestore)
+
+narrator "You both head to a nearby store, buy some sodas, and then make your way back to your house." {c}
+
+<mainChar> "Thanks for sticking with me through this.{a} It’s been a rough day, but at least we can unwind now." {c}
+
+Stella.SetSprite(10)
+
+Stella "No problem.{a} And hey, I get to crash your place and play my favorite game.{c} Not a bad way to end the day." {c}
+
+setlayermedia(background homeComputer)
+
+narrator "Back at your house, you plug in Stella’s favorite game and both of you spend the evening playing and enjoying each other’s company." {c}
+
+<mainChar> "Well, I guess not all adventures are a bust.{a} Sometimes the best part is just hanging out and having fun." {c}
+
+Stella "Agreed.{a} Here’s to more unexpected adventures—preferably with better outcomes." {c}
+
+narrator "The evening is filled with laughter and friendly competition as you both lose yourselves in the game, forgetting the day’s earlier frustrations." {c}
+
+<mainChar> "Here’s to the next adventure.{a} Hopefully, it involves less digging and more excitement." {c}
+
+Stella "Definitely.{a} And maybe a bit less trash." {c}
+
+Hide(Stella)
+
+narrator "After Stella leaves, you find yourself alone in your room, the excitement of the day slowly fading away.{c} You lie down on your bed, replaying the day's events and your past adventures with Stella in your mind." {c}
+
+setlayermedia(background "01_2")
+
+<mainChar> "What a day... From digging through that trash heap to the whole fiasco with the stereo.{c} And let’s not forget the time we tried to break into the cafeteria kitchen. That was a mess." {c}
+
+<mainChar> "I mean, really?{a} Breaking into a kitchen just to find some weird ingredient.{c} All I got was a detention and a really bad reputation with the lunch staff." {c}
+
+<mainChar> "And then there was the science lab incident.{c} I still can't believe we actually tried to hack into a top-secret experiment with nothing but a broken calculator and a pair of old binoculars. That was probably one of our most absurd moments." {c}
+
+<mainChar> "Why do I keep getting roped into these ridiculous escapades?{a} I ended up in detention for the day just to help Stella with that awful stereo.{c} It’s like I’m a magnet for trouble whenever she’s around." {c}
+
+<mainChar> "And yet, despite all the chaos and getting kicked out of class or ending up in embarrassing situations, there’s something about Stella that keeps pulling me back.{c} She’s always so upbeat and has this way of turning the most mundane tasks into epic quests." {c}
+
+<mainChar> "It’s like she has this strange talent for making even the dullest things seem like an adventure.{c} Maybe it’s her enthusiasm or just her quirky way of looking at things." {c}
+
+Stella.SetPosition(0.5)
+Stella.SetSprite(12)
+Show(Stella)
+
+<mainChar> "But why do I care so much?{a} Why do I keep agreeing to these crazy plans and risking everything just to help her?{c} Is it the excitement, or is there something more?" {c}
+
+<mainChar> "Sometimes I wonder if there’s more to it than just friendship.{c} I mean, she’s always on my mind. Whether it’s her wild schemes or the way she can make even a boring day seem interesting." {c}
+
+<mainChar> "It’s like she’s become a part of my life, and I’m not quite sure how I feel about that.{c} Maybe it’s just the thrill of the unknown, or maybe it's something deeper." {c}
+
+Hide(Stella)
+
+<mainChar> "I guess I'll have to wait and see.{c} For now, all I know is that I’m caught up in this whirlwind with her, and there’s no telling where it might lead." {c}
+
+<mainChar> "Here’s hoping whatever comes next is worth all this confusion and these weird, unexpected adventures.{c} Because if there’s one thing I’ve learned, it’s that life with Stella is never boring." {c}
+
+StopSong()
+
+narrator "The chapter ends with you lying in bed, your thoughts filled with the day's adventures and the unresolved feelings about Stella, leaving you with questions about the future." {c}
+
+

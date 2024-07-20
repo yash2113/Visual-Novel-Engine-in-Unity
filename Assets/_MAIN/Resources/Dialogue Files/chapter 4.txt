@@ -1,0 +1,220 @@
+setlayermedia(background classhall)
+
+PlaySong(classroom)
+
+<mainChar> "Walking through the hall, I still can’t believe everything Stella just told me.{c} Questions are swirling in my mind, and I can’t help but curse myself for being so lame on the rooftop.{c} Why couldn’t I grasp everything properly?" {c}
+
+Show(Stella)
+
+Stella.SetSprite(7)
+
+Stella.setPosition(0)
+
+<mainChar> "Okay, focus. I need to ask her about the guard. That creepy guy is probably important, right?" {c}
+
+narrator "You almost reached the classroom and opened your mouth to speak, but Stella quickly slipped into her seat before you could say anything." {c}
+
+Hide(Stella)
+
+setlayermedia(background Classroom)
+
+<mainChar> "Great. Just great. Guess I'll have to wait until next time. Can't just chase her down in the middle of class, can I?" {c}
+
+narrator "You sighed and headed to your own seat, deciding it was best to leave it there for now and ask her some other time." {c}
+
+<mainChar> "Alright, just focus on the lesson. Pretend everything is normal. Yeah, right." {c}
+
+narrator "The teacher's voice droned on, but you couldn’t help but glance over at Stella. She seemed completely absorbed in her own thoughts." {c}
+
+<mainChar> "What else is she hiding? And why do I feel like my life just turned into a bizarre novel?" {c}
+
+<mainChar> "For now, I'll just play it cool. But I’m definitely cornering her later for answers. This mystery isn’t going to solve itself." {c}
+
+narrator "The rest of the school day passes uneventfully. You attend your classes, though your mind often drifts back to the strange events with Stella." {c}
+
+narrator "When the final bell rings, you meet up with Arthur, your friend who you promised to play games with today." {c}
+
+StopSong()
+
+Show(Arthur)
+
+setlayermedia(background "Town Street")
+
+PlaySong(townSong)
+
+Arthur "Hey, man! Ready to head to your place? I brought my controller!" {c}
+
+<mainChar> "You actually came straight from school? Didn't think you'd take it so seriously." {c}
+
+Arthur "Of course! I've been looking forward to this all week. Let's go!" {c}
+
+StopSong()
+
+setlayermedia(background homeComputer)
+
+PlaySong(Calm)
+
+<mainChar> "Man, I can't believe how bad we were at this game when we first started." {c}
+
+Arthur.setPosition(0.8)
+
+Arthur "Right? Remember that time we couldn't even get past the first level? Total noobs." {c}
+
+<mainChar> "And now we're like pros. Well, almost. Still can't beat that final boss." {c}
+
+Arthur "We'll get there. Just need more practice. Maybe if you didn't get distracted by weird stuff all the time." {c}
+
+<mainChar> "Weird stuff? What do you mean?" {c}
+
+Arthur "You know, like zoning out in class, staring off into space. You've been acting strange lately." {c}
+
+<mainChar> "Just got a lot on my mind, I guess. Nothing to worry about." {c}
+
+Arthur "If you say so. Just don't let it mess with our game time." {c}
+
+<mainChar> "You know me, always focused when it comes to gaming. Unlike you with your terrible aim." {c}
+
+Arthur "Hey, I resent that! My aim is legendary!" {c}
+
+<mainChar> "Legendary for missing every target, maybe." {c}
+
+Arthur "Alright, Mr. Perfect. Let's see you beat me this time." {c}
+
+narrator "You both laugh and continue playing, enjoying the distraction." {c}
+
+Hide(Arthur)
+
+narrator "After a few hours, Arthur leaves. You finish your homework, help your mom with dinner, and enjoy some time with your family." {c}
+
+setlayermedia(background "01_2")
+
+StopSong()
+
+narrator "That night, you go to bed and quickly fall asleep." {c}
+
+setlayermedia(background mires)
+
+PlaySong(mysterious)
+
+<mainChar> "Alright, here we go again. This dream stuff is getting old." {c}
+
+narrator "You start walking forward, looking around at the strange landscape." {c}
+
+<mainChar> "Maybe I should take this more seriously. But hey, it's just a dream, right?" {c}
+
+narrator "You joke around, feeling carefree and confident that it's all just in your head." {c}
+
+<mainChar> "Next thing you know, I'll be the chosen one in some epic quest. Where's my magic sword?" {c}
+
+narrator "Suddenly, you feel a sharp pain in your chest." {c}
+
+???  "Don't take it lightly." {c}
+
+<mainChar> "Okay, okay! Message received. I'll be more serious. But seriously, where's my magic sword?" {c}
+
+setlayermedia(background "Forest Steps")
+
+narrator "You find yourself at the base of some forest steps. Despite the pain, you feel compelled to move forward." {c}
+
+<mainChar> "Why do I feel like I'm in some kind of fantasy novel? This is so cliché." {c}
+
+<mainChar> "Next, there'll be a wise old mentor telling me my destiny." {c}
+
+narrator "You continue to chat with yourself, trying to make sense of everything as you ascend the steps." {c}
+
+<mainChar> "Bet there's a dragon at the top of these stairs. Or maybe a talking tree. This dream just keeps getting weirder." {c}
+
+<mainChar> "Okay, I guess I have two choices. Walk up these endless steps or just keep moving forward. Decisions, decisions." {c}
+
+choice "What will you do?"
+{
+
+-Walk up the steps
+
+<mainChar> "Alright, here we go. One step at a time. Who needs leg day when you have dream stairs?" {c}
+
+<mainChar> "These steps better lead to something cool. Maybe a treasure chest or a mystical creature. Or at least a good view." {c}
+
+<mainChar> "Wow, how many steps are there? It's like they never end. I'm starting to regret this choice." {c}
+
+<mainChar> "Okay, keep going. Almost there. Just a few more... I hope." {c}
+
+narrator "You finally reach the top and see a village spread out before you." {c}
+
+setlayermedia(background village)
+
+<mainChar> "A village? Didn't see that coming. Looks kind of peaceful, though." {c}
+
+narrator "As you take in the view, you notice a man walking by. He seems similar to the guard, both in physique and feel." {c}
+
+createcharacter("Man as Generic" -e true)
+
+Man.SetSprite("Man")
+
+Man.setPosition(0.8)
+Man.move(0 -spd 0.2)
+
+<mainChar> "Wait, is that the guard? He looks almost the same." {c}
+
+narrator "You quickly hide in the bushes, but you feel like he saw you." {c}
+
+<mainChar> "Great, just great. Why do I always get into these situations?" {c}
+
+narrator "Panicking, you run away and stumble over the steps, waking up abruptly." {c}
+
+Hide(Man)
+
+setlayermedia(background "01_2")
+
+<mainChar> "That was intense. What a dream." {c}
+
+-Just move forward
+
+narrator "You decide to keep moving forward, avoiding the steps altogether." {c}
+
+<mainChar> "Yeah, no thanks, steps. I'll just keep walking. Maybe there's something interesting up ahead." {c}
+
+narrator "The fog starts to thicken as you move forward, making it hard to see." {c}
+
+<mainChar> "Okay, this is getting creepy. Where did all this fog come from?" {c}
+
+setlayermedia(background Onsen)
+
+<mainChar> "An onsen? In the middle of nowhere? Alright, dream logic, I'll roll with it." {c}
+
+narrator "You try to look through the fog, but it’s too dense to see anything." {c}
+
+<mainChar> "Hello? Anyone there? This place is giving me the creeps." {c}
+
+narrator "As you peer into the fog, a sudden chill runs down your spine." {c}
+
+<mainChar> "Okay, bad idea. Let's get out of here." {c}
+
+narrator "You turn to leave, but find yourself disoriented in the fog." {c}
+
+<mainChar> "Seriously, dream? This is just mean. Which way did I come from?" {c}
+
+narrator "Panicking, you start to run and suddenly wake up in your bed." {c}
+
+setlayermedia(background "01_2")
+
+<mainChar> "Okay, note to self: avoid foggy onsen in dreams. Noted." {c}
+
+}
+
+StopSong()
+
+Load("chapter 5")
+
+
+
+
+
+
+
+
+
+
+
+
+

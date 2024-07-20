@@ -1,0 +1,210 @@
+setlayermedia(background clubroom)
+
+PlaySOng(Happy2)
+
+narrator "After a few days of not seeing Stella, you finally spot her in the meeting room, looking quite pleased with herself."
+
+Show(Stella)
+
+Stella.SetPosition(0.9)
+
+<mainChar> "Stella! Where have you been? I was starting to think you got abducted by aliens."
+
+Stella.SetSprite(10)
+
+Stella "Aliens would’ve been a cakewalk.{c} I was on a treacherous journey through the depths of the city’s underground.{c} You wouldn’t believe the things I saw."
+
+<mainChar> "Did you have to battle sewer monsters?"
+
+Stella "Close. Laser security systems."
+
+<mainChar> "Of course. Every city has those in the sewers."
+
+Stella "And I had to decode hieroglyphs."
+
+<mainChar> "Naturally. Ancient Egyptians loved to hang out in the subway."
+
+Stella "There was a high-speed chase with a shadowy figure."
+
+<mainChar> "I bet he had a British accent."
+
+Stella "Laugh all you want, but look what I found."
+
+<mainChar> "If you say it's the Holy Grail, I’m out of here."
+
+Stella "No, it’s even better."
+
+Stella.move(0 -spd 0.5)
+
+narrator "Stella reaches into her bag and pulls out a small, peculiar-looking device covered in wires and blinking lights."
+
+createcharacter(Gadget -e true)
+Gadget.setPosition(0.9)
+
+<mainChar> "Uh, are you sure that thing isn't going to explode?"
+
+Stella.SetSprite(11)
+
+Stella "Relax. This is a state-of-the-art tracking device. It can detect important items and pinpoint their location."
+
+<mainChar> "Great. Just what we needed: a gadget that looks like it’s one bad wire away from becoming a fire hazard."
+
+Stella "You’re such a skeptic."
+
+<mainChar> "Skeptic? More like realist. This thing looks like it was made by a mad scientist on a caffeine binge."
+
+Stella "Well, we’ll find out soon enough."
+
+<mainChar> "Or we’ll end up on the evening news."
+
+Stella "Relax.{c} This is a state-of-the-art tracking device.{c} It can detect important items and pinpoint their location."
+
+<mainChar> "If you say so.{c} But if I get zapped, I’m blaming you."
+
+Stella "Watch and learn."
+
+narrator "Stella activates the gadget, and it emits a series of high-pitched beeps before sparking wildly."
+
+StopSong()
+
+PlaySong(Shenanigans)
+
+Gadget.SetColor(red)
+
+<mainChar> "Um, is it supposed to do that?"
+
+Stella "It’s just calibrating."
+
+narrator "Suddenly, the gadget starts shaking violently and emits a puff of smoke."
+
+<mainChar> "Sure, calibrating.{c} And here I thought it was having a seizure."
+
+narrator "Stella frowns, adjusting some wires and fiddling with the device.{c} The gadget lets out a loud screech, causing both of you to cover your ears."
+
+<mainChar> "Okay, this is starting to sound like a banshee.{c} What next,{a} it starts summoning ghosts?"
+
+Stella "I think I just need to tweak the settings."
+
+narrator "Stella turns a dial, and the gadget suddenly launches itself into the air, buzzing around the room like a deranged bee."
+
+Gadget.move(0.9 2 -spd 0.5)
+
+<mainChar> "Duck!"
+
+narrator "You both dive under a table as the gadget zips around,{a} knocking over books and scattering papers."
+
+Gadget.move(0.9 0 -spd 0.5)
+
+Stella "Catch it!"
+
+<mainChar> "Are you kidding?{c} That thing's out for blood!"
+
+Gadget.move(0.9 2 -spd 0.5)
+
+narrator "The gadget finally crashes into the wall,{a} falling to the ground with a pathetic whir."
+
+<mainChar> "Well,{a} that went about as well as I expected.{c} Do we need a priest to perform an exorcism on it now?"
+
+Gadget.move(0.9 0 -spd 0.5)
+
+narrator "Just then, the door opens and Arthur walks in, munching on a sandwich."
+
+Show(Arthur)
+Arthur.setPosition(0.5)
+
+Stella.SetPosition(0)
+
+Arthur "Hey, what’s all the noise in here?{c} And why does it look like a glitter bomb exploded?"
+
+<mainChar> "Arthur, meet Stella’s new 'state-of-the-art' gadget.{c} It's supposed to track important items but so far, it’s just tracked chaos."
+
+Arthur "Nice.{c} Can it make sandwiches too?"
+
+narrator "Stella ignores the comment and starts examining the gadget again."
+
+Stella.Setsprite(7)
+
+Stella "I was sure this would work.{c} Maybe it needs more power."
+
+<mainChar> "Yeah, because that’s exactly what it needs.{c} More power to cause more destruction."
+
+Gadget.setPosition(0.9 0)
+
+Arthur.setPosition(0.8)
+
+Arthur "Hey, maybe it just needs a kick.{c} Sometimes that works with my old laptop."
+
+narrator "Arthur walks over and gives the gadget a gentle kick.{c} It immediately lights up again,{a} but this time, it starts spinning like a top."
+
+<mainChar> "Oh great,{a} now it’s doing ballet."
+
+narrator "The gadget spins faster and faster,{a} creating a mini whirlwind in the room.{c} Papers and items start flying around."
+
+Stella "Quick, grab it before it breaks something!"
+
+Stella.SetSprite(9)
+
+narrator "You and Arthur make a mad dash for the gadget,{a} but it evades your every move.{c} Finally, Stella lunges at it,{a} managing to grab it with both hands."
+
+Stella "Gotcha!"
+
+Gadget.SetColor(white)
+
+narrator "Just then, the gadget releases a burst of water,{a} soaking all three of you."
+
+Arthur "Well,{a} that's refreshing."
+
+Hide(Gadget)
+
+<mainChar> "Seriously,{a} Stella?{c} This thing is more unpredictable than a cat on catnip."
+
+Stella.SetSprite(7)
+
+narrator "As you all stand there dripping wet,{a} the door opens again and Ms. Harris enters,{a} looking concerned."
+
+Show(Teacher)
+
+Hide(Arthur)
+
+Teacher.setPosition(0.8)
+
+Teacher "What in the world is going on here?"
+
+Stella "Just a minor technical issue,{a} Ms. Harris.{c} Everything's under control."
+
+<mainChar> "Under control?{c} We’re soaked,{a} covered in glitter,{a} and almost got decapitated by a rogue gadget.{c} Yep,{a} totally under control."
+
+Teacher "I see.{c} Well,{a} clean this mess up and try not to destroy the school,{a} alright?"
+
+Hide(Teacher)
+
+Show(Arthur)
+
+Arthur "You got it,{a} Ms. Harris."
+
+StopSong()
+
+PlaySong(Comedy)
+
+narrator "Ms. Harris leaves,{a} shaking her head.{c} You all look at each other and burst into laughter."
+
+<mainChar> "So, what now?{c} Back to the drawing board?"
+
+Stella.SetSprite(12)
+
+Stella "Definitely.{c} But I’m not giving up.{c} We’ll get it right."
+
+Arthur "In the meantime,{a} let’s make sure we have a fire extinguisher on hand."
+
+<mainChar> "And maybe some insurance.{c} Just in case."
+
+Hide(Arthur)
+Hide(Stella)
+
+Hide(Gadget)
+
+narrator "As you all start cleaning up the mess,{a} you can’t help but feel a strange sense of excitement.{c} Despite the chaos,{a} this adventure was just beginning."
+
+StopSong()
+
+Load("chapter 9")

@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour
         return PlaySoundEffect(clip, mixer, volume, pitch, loop);
     }
 
-    public AudioSource PlaySoundEffect(AudioClip clip, AudioMixerGroup mixer = null, float volume = 1, float pitch = 1, bool loop = false)
+    public AudioSource PlaySoundEffect(AudioClip clip, AudioMixerGroup mixer = null, float volume = 1, float pitch = 1, bool loop = false, string filePath = "")
     {
         AudioSource effectSource = new GameObject(string.Format(SFX_NAME_FORMAT, clip.name)).AddComponent<AudioSource>();
         effectSource.transform.SetParent(sfxRoot);
@@ -153,6 +153,23 @@ public class AudioManager : MonoBehaviour
                 channel.StopTrack();
                 return;
             }    
+        }
+    }
+
+    public void StopAllTracks()
+    {
+        foreach (AudioChannel channel in channels.Values)
+        {
+            channel.StopTrack();
+        }
+    }
+
+    public void StopAllSoundEffects()
+    {
+        AudioSource[] sources = sfxRoot.GetComponentsInChildren<AudioSource>();
+        foreach (var source in sources)
+        {
+            Destroy(source.gameObject);
         }
     }
 

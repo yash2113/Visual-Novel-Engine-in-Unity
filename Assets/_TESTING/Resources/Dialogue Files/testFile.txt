@@ -6,6 +6,12 @@ Narrator "Hey girls! Talk about or nba"
 
 Narrator "Hey girls! Talk about or nfl"
 
+CreateCharacter("Innkeeper as Generic" -e true)
+
+Innkeeper.SetSprite(Man)
+
+Innkeeper.Move(1 -spd 0.1)
+
 enter Stella [0:4] "Hi, who do think will win the champions league?"
 
 CreateCharacter(Raelin)

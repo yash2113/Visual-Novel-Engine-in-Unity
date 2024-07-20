@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using COMMANDS;
 using System.Collections;
 using System.Collections.Generic;
@@ -38,3 +39,4 @@ public class CommandTesting : MonoBehaviour
     }
 
 }
+#endif

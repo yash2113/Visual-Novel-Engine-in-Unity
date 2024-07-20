@@ -20,8 +20,8 @@ MonoBehaviour:
     dialogueColor: {r: 0.4305233, g: 0.7488772, b: 0.9547169, a: 1}
     nameFont: {fileID: 11400000, guid: 6a888d69a87eec245b2ce096aa58c7b4, type: 2}
     dialogueFont: {fileID: 11400000, guid: ffa5a4cc46a31cf41b8c4ae60b57f04f, type: 2}
-    nameFontScale: 40
-    dialogueFontScale: 60
+    nameFontScale: 60
+    dialogueFontScale: 40
     sprites:
       _serializedList: []
   - name: Stella
@@ -259,3 +259,63 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 242ff547de1cca840ae4e1c4aa04b0b3, type: 3}
       - Key: 9
         Value: {fileID: 21300000, guid: 049be8b7bc0127745970b173228f37e4, type: 3}
+  - name: Teacher
+    alias: teach
+    characterType: 1
+    nameColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 5624d709c8b8fe44b9f150e4bde720e3, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 606e4f2b533313848b60785c9382ff05, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 30
+    sprites:
+      _serializedList:
+      - Key: teacher
+        Value: {fileID: 21300000, guid: 1124c2af2beceaa4cbdc64b0cd14dda9, type: 3}
+  - name: Midnight
+    alias: night
+    characterType: 1
+    nameColor: {r: 0.86415094, g: 0.3896832, b: 0.3896832, a: 1}
+    dialogueColor: {r: 0.10181522, g: 0, b: 1, a: 1}
+    nameFont: {fileID: 11400000, guid: 7df1fa4082eb7264096d29fa1043d546, type: 2}
+    dialogueFont: {fileID: 11400000, guid: e49879bbb1878ff4db50290d591e03fb, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 40
+    sprites:
+      _serializedList:
+      - Key: cat lock
+        Value: {fileID: 21300000, guid: 0ae18e63be9278141826779537a84a70, type: 3}
+      - Key: cat rest
+        Value: {fileID: 21300000, guid: 406b3f750ae1ea443902951e0e7db04b, type: 3}
+      - Key: cat sit
+        Value: {fileID: 21300000, guid: 69496d509f8a0dc429906ba2605ecd7b, type: 3}
+      - Key: cat walk
+        Value: {fileID: 21300000, guid: ccaef5c87c052044ebde37288255475d, type: 3}
+  - name: Arthur
+    alias: Art
+    characterType: 1
+    nameColor: {r: 0.46965387, g: 0.8627451, b: 0.3882353, a: 1}
+    dialogueColor: {r: 1, g: 0.04493001, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 7df1fa4082eb7264096d29fa1043d546, type: 2}
+    dialogueFont: {fileID: 11400000, guid: fa793238e3b71994da6062c1417b8f4c, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 40
+    sprites:
+      _serializedList:
+      - Key: arthur
+        Value: {fileID: 21300000, guid: a74ef68fe1f3d79439acdf584c8a9583, type: 3}
+  - name: Gadget
+    alias: Gadget
+    characterType: 1
+    nameColor: {r: 0.13916247, g: 0.3509434, b: 0.09468848, a: 1}
+    dialogueColor: {r: 1, g: 0.04493001, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 7df1fa4082eb7264096d29fa1043d546, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 95a4c5947ced08741b5936e7cbdf479d, type: 2}
+    nameFontScale: 40
+    dialogueFontScale: 40
+    sprites:
+      _serializedList:
+      - Key: gadget
+        Value: {fileID: 21300000, guid: e75e61e914a32054e8da06fa7e4151b7, type: 3}
+      - Key: oldstero
+        Value: {fileID: 21300000, guid: 6e5b60f0f7733de4a824e309f166730b, type: 3}

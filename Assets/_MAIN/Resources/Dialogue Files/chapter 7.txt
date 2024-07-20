@@ -1,0 +1,287 @@
+setlayermedia(background "homeComputer")
+
+PlaySong(piano)
+
+narrator "Exams were in full swing, and you were feeling the pressure.{c} Your daily routine had become a blur of study sessions and stress."
+
+narrator "Your alarm went off at the usual time, but you felt like you hadn't slept at all."
+
+<mainChar> "Another day, another exam.{c} I can't wait for this week to be over."
+
+narrator "You dragged yourself out of bed and got ready for school,{c} your mind buzzing with last-minute revisions."
+
+setlayermedia(background "kitchen day")
+
+narrator "At breakfast, your mom looked at you with concern."
+
+Mom "You look exhausted, honey.{c} Make sure you eat something.{c} You need energy for your exams."
+
+<mainChar> "Thanks, Mom.{c} I'll try."
+
+narrator "You grabbed a piece of toast and hurried out the door, meeting Arthur on the way to school."
+
+StopSong()
+
+setlayermedia(background "03_1")
+
+Show(Arthur)
+Arthur.SetPosition(0)
+
+PlaySong(Calm2)
+
+Arthur "Morning, <mainChar>.{c} Ready for another round of torture?"
+
+<mainChar> "Barely.{c} I've been living off coffee and sheer willpower."
+
+Arthur "Tell me about it.{c} What subjects do we have today?{c} Math and History, right?"
+
+<mainChar> "Yeah, Math first.{c} I hope I remember all the formulas."
+
+Arthur "Same here.{c} If I see one more equation, my brain might explode."
+
+narrator "You both laughed, but the tension was palpable.{c} The school was abuzz with students cramming for their exams, and you joined the throng, heading to your first class."
+
+Hide(Arthur)
+
+StopSong()
+
+setlayermedia(background "classroom")
+
+PlaySong(classroom)
+
+narrator "As you settled into your seat, you glanced at the clock, mentally preparing yourself for the test ahead."
+
+<mainChar> "Alright, just focus.{c} You've got this."
+
+narrator "The teacher handed out the exam papers, and the room fell silent except for the sound of pencils scratching on paper."
+
+<mainChar> "Okay, first question.{c} Not too bad."
+
+narrator "You started working through the questions, your concentration deep and unwavering.{c} But then, you felt a strange sensation, like someone was watching you."
+
+narrator "You looked up and saw Stella, staring at you from across the room.{c} Her gaze was intense, almost as if she was trying to communicate something."
+
+<mainChar> "What's up?{c} Why aren't you doing your exam?"
+
+Show(Stella)
+
+Stella.SetPosition(1)
+Stella.SetSprite(2)
+
+Stella "Meet me outside.{c} It's urgent."
+
+<mainChar> "Now?{c} We're in the middle of an exam!"
+
+narrator "You tried to keep your voice low, but the teacher almost caught you whispering.{c} Stella mouthed the word 'urgent' again and then stood up."
+
+Teacher "Is there a problem, Stella?"
+
+Stella.SetSprite(7)
+
+Stella "I need to go to the washroom, please."
+
+Hide(Stella)
+
+narrator "The teacher nodded, and Stella left the room.{c}"
+
+choice "should you follow her or stay and finish your exam?"
+{
+-Stay and Finish the Exam
+
+narrator "You decided to stay and finish your exam, thinking you could talk to Stella later."
+
+<mainChar> "This exam is important.{c} I can't just leave."
+
+Show(Stella)
+
+narrator "A few minutes later, Stella returned.{c} She threw a pen at you, clearly frustrated."
+
+Stella "It's urgent!{c} Come on!"
+
+Hide(Stella)
+
+narrator "You hesitated, but seeing her angry expression, you realized you had no choice."
+
+-Follow Stella
+
+narrator "You decided to follow Stella.{c} You stood up and asked the teacher for permission to go to the washroom."
+
+Teacher "Make it quick."
+
+}
+
+StopSong()
+
+setlayermedia(background "washroom")
+
+narrator "You found Stella waiting near the washroom, looking serious."
+
+Show(Stella)
+
+PlaySong(Shenanigans)
+
+<mainChar> "What's going on?"
+
+Show(Stella)
+
+Stella "The invigilator has the key that might be important.{c} We need to get it."
+
+<mainChar> "What?{c} During an exam?{c} Are you sure?"
+
+Stella.SetSprite(8)
+
+Stella "Yes, I'm sure.{c} And we have to act now.{c} You'll create a distraction in the classroom.{c} I'll grab the item during the chaos and then sit back down."
+
+<mainChar> "This sounds ridiculous.{c} But okay, let's do it.{c} What's the plan exactly?"
+
+Stella "Just make a scene.{c} Anything that draws attention.{c} I'll handle the rest."
+
+<mainChar> "Great.{c} So basically, I have to embarrass myself.{c} This better be worth it."
+
+Hide(Stella)
+
+narrator "You returned to the classroom, heart pounding.{c} You glanced around, trying to think of the most effective way to cause a disruption."
+
+setlayermedia(background "classroom")
+
+<mainChar> "Here goes nothing."
+
+narrator "You took a deep breath and then deliberately knocked over your desk, sending books and papers flying everywhere."
+
+<mainChar> "Oh no!{c} My desk!{c} Everything's everywhere!"
+
+narrator "The entire class turned to look at you, and the teacher rushed over, clearly annoyed."
+
+Teacher "What is going on here?{c} Are you alright?"
+
+<mainChar> "I'm so sorry!{c} I just lost my balance and... whoops!{c} There go my pens!"
+
+Show(Stella)
+
+Stella.SetSprite(9)
+
+Stella.SetPosition(0.5)
+
+narrator "You flung your pens in all directions, adding to the chaos.{c} In the midst of the commotion, Stella slipped back into the classroom and stealthily made her way to the teacher's desk."
+
+Teacher "This is highly inappropriate!{c} Clean this up right now!"
+
+<mainChar> "Right away!{c} Just... need to find my balance first."
+
+Stella.move(1 -spd 0.5)
+
+narrator "As you awkwardly tried to pick up your scattered belongings, you saw Stella discreetly grab the item and slide it into her pocket before returning to her seat."
+
+<mainChar> "Did she get it?{c} I hope this is worth it."
+
+narrator "Just as you started to calm things down, the teacher snatched your exam paper from your desk."
+
+Teacher "Enough of this.{c} You're disrupting the entire class.{c} Leave immediately."
+
+<mainChar> "But my exam...!"
+
+narrator "Feeling defeated, you walked out of the classroom, your mind racing with thoughts of the unfinished test and your new game slipping away."
+
+<mainChar> "Great.{c} Half my paper is unfinished.{c} There goes my chance of getting that new game.{c} Thanks a lot, Stella."
+
+Hide(Stella)
+
+StopSong()
+
+setlayermedia(background "schoolCampus")
+
+narrator "After what felt like an eternity, the test ended.{c} You saw Stella leaving the classroom and ran to catch up with her."
+
+Stella.SetPosition(0.1)
+
+Show(Stella)
+
+<mainChar> "Stella!{c} Did you get it?"
+
+Stella.SetSprite(1)
+
+Stella "Meet me in the clubhouse.{c} We can't talk here."
+
+Hide(Stella)
+
+narrator "You hurried to the clubhouse, curiosity and frustration mingling in your mind.{c} When you arrived, Stella was already there, pacing back and forth."
+
+setlayermedia(background "clubroom")
+
+PlaySong(piano)
+
+Show(Stella)
+
+Stella.SetSprite(7)
+
+Stella "How is this possible?{c} I was sure this was the item."
+
+<mainChar> "You mean we went through all that for nothing?{c} What even is it?"
+
+narrator "Stella held up a plain-looking object, and you stared at it, bewildered."
+
+<mainChar> "It's just a regular pen.{c} Are you kidding me?{c} I got kicked out of my exam for a pen?"
+
+narrator "You couldn't help but laugh at the absurdity of the situation, despite feeling frustrated."
+
+<mainChar> "So much for saving the world.{c} Now I won't even get my new game.{c} My parents are going to kill me."
+
+Stella "I'm sorry.{c} I really thought this was important."
+
+<mainChar> "Next time, let's make sure before we disrupt an exam, alright?"
+
+Stella "Agreed.{c} I'll be more careful."
+
+narrator "You both sighed, realizing how ridiculous the situation had been.{c} Despite the setback, there was a hint of determination in Stella's eyes."
+
+Stella.SetSprite(11)
+
+Stella "This is just a minor hiccup.{c} We'll get it right next time."
+
+<mainChar> "Well, I hope so.{c} Because if we don't, I might just start questioning your judgment."
+
+Stella "Fair enough.{c} Let's call it a day.{c} We'll regroup tomorrow."
+
+<mainChar> "Yeah, after I figure out how to explain to my parents that I got kicked out of an exam for trying to 'save the world' with a pen.{c} Thanks, Stella."
+
+Stella "No problem.{c} Consider it character building."
+
+<mainChar> "If my character gets any more built, I'm going to need a construction permit."
+
+Stella "Hey, look on the bright side. At least it wasn't a paperclip. Imagine explaining that."
+
+<mainChar> "Oh, definitely. 'Mom, Dad, I failed my exam because I had to retrieve a mystical paperclip to save the universe.' That's sure to go over well."
+
+Stella.SetSprite(9)
+
+Stella "Mystical office supplies could be the next big thing. Maybe we're just ahead of the curve."
+
+<mainChar> "Great. So, while we're trendsetters, I'm grounded for eternity and never getting that new game."
+
+Stella "Think of it as preparation. We need resilience for what's ahead."
+
+<mainChar> "I'd rather build resilience by battling monsters, not wrestling with teachers over pens."
+
+Stella "You can’t always choose your battles. Sometimes, they choose you."
+
+<mainChar> "In that case, I hope our next 'battle' is less... academically destructive."
+
+Stella "Deal. Next time, we'll aim for a weekend. Less collateral damage."
+
+<mainChar> "Thanks. My GPA and future gaming sessions appreciate it."
+
+narrator "With that, you both left the clubhouse, realizing how bizarre and hilarious your day had been.{c} But somewhere amidst the laughter, a sense of camaraderie and determination grew.{c} After all, the adventure had just begun."
+
+Hide(Stella)
+
+StopSong()
+
+Load("chapter 8")
+
+
+
+
+
+
+
+

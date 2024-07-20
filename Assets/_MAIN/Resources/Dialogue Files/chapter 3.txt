@@ -1,0 +1,157 @@
+setlayermedia(background "01_2")
+
+<mainChar> "It's 7:50! I'm late!" {c}
+
+narrator "You hurriedly throw on your uniform, grab your backpack, and dash out the door without even grabbing breakfast." {c}
+
+setlayermedia(background "Town Street")
+
+PlaySong(townSong)
+
+<mainChar> "What was that dream?{a} The rooftop, Stella, that place... It felt so real." {c}
+
+narrator "You nearly trip over a small cat darting across your path. You stop for a moment to watch it scamper away, a pang of longing hitting you." {c}
+
+<mainChar> "I've always wanted a cat, but Mom never allowed one.{a} Focus, I need to get to school." {c}
+
+StopSong()
+
+setlayermedia(background Classroom)
+
+Show(Stella)
+Stella.SetSprite(1)
+
+PlaySong(classroom)
+
+narrator "When you finally arrive at school, slightly out of breath, you head straight to your classroom.{c} You can't help but notice Stella stealing glances at you from across the room. Your heart skips a beat." {c}
+
+<mainChar> "What if all that was real? Or was it just a dream?" {c}
+
+Hide(Stella)
+
+narrator "The first period passes in a blur. You barely register the teacher's voice as you replay the events of your dream in your mind.{c} You catch yourself doodling strange symbols in the margins of your notebook." {c}
+
+createcharacter(Arthur -e true)
+
+Arthur "Hey, did you finish that game you bought? How was it?" {c}
+
+narrator "Lost in your thoughts, you don't immediately respond.{c} Arthur, never one to be ignored, lightly bumps your head with his fist." {c}
+
+Arthur "Hey! Earth to <mainChar>! I'm asking about the game!" {c}
+
+<mainChar> "Uh, yeah, about the game... Sorry, I haven't had the chance to play it yet." {c}
+
+Arthur "Really? That's not like you." {c}
+
+<mainChar> "Did you see the match yesterday? The Lakers vs. Warriors? That last-minute three-pointer was insane, right?" {c}
+
+Arthur "Yeah, I couldn't believe it! That shot was incredible! I thought the Warriors had it in the bag, but the Lakers pulled through at the last second." {c}
+
+narrator "As Arthur continues to rave about the game, you nod along, but your mind is elsewhere. The fact that you had perfectly predicted the events of the match in your dream only adds to your confusion." {c}
+
+Hide(Arthur)
+
+<mainChar> "Was it really just a dream?" {c}
+
+narrator "The bell rings again, signaling the start of the next period.{c} As you gather your things, you can't shake the feeling that something strange is going on. You glance over at Stella once more, but she's already lost in her own world." {c}
+
+narrator "The rest of the morning drags on, your thoughts constantly drifting back to the dream and the mysterious book. When lunchtime finally arrives, you find yourself hesitating." {c}
+
+Show(Arthur)
+
+<mainChar> "I don't know, Arthur. It's been a weird morning, and I can't shake this feeling." {c}
+
+Arthur "Well, maybe some fresh air on the rooftop will clear your head. Plus, you promised to show me that game later, right?" {c}
+
+<mainChar> "Yeah, you're right. Let's head up there." {c}
+
+Hide(Arthur)
+
+narrator "As you walk through the hallways towards the rooftop, doubts still nag at you." {c}
+
+<mainChar> "Maybe it's all just a cosplay or some elaborate prank. Stella has always been weird, but this... Could she really be involved in something so bizarre?" {c}
+
+narrator "With a sigh, you push open the door to the rooftop." {c}
+
+StopSong()
+
+setlayermedia(background schoolrooftop)
+
+PlaySOng(mysterious)
+
+Show(Stella)
+
+Stella.setPosition(0.3)
+Stella.SetSprite(7)
+
+narrator "When you reached the rooftop, Stella was there, looking out over the school grounds. She turned to you as you approached." {c}
+
+Stella "You came. I was worried you wouldn't." {c}
+
+Stella.move(0.6 -spd 0.5)
+Stella.SetSprite(12)
+
+<mainChar> "Of course, I came. After everything that happened, how could I not? Is this the part where you tell me I’m the chosen one or something?" {c}
+
+Stella "Not exactly. But I do need to explain something.{c} First, you have to promise you won’t tell anyone what you’re about to hear. It’s for your safety as well as mine." {c}
+
+<mainChar> "Oh, sure, the old 'it’s for your safety' line. I promise." {c}
+
+Stella.SetSprite(7)
+
+Stella "The book you helped me find isn’t an ordinary book.{c} It’s connected to an ancient secret, one that could be very dangerous if it falls into the wrong hands." {c}
+
+<mainChar> "Of course. It's never just an ordinary book, is it? Is there a prophecy about it too?" {c}
+
+Stella "This book contains powerful spells and ancient knowledge from a time long forgotten. It’s part of a collection known as the 'Codex of Shadows.'{c} Each volume in the Codex holds secrets that can alter the very fabric of reality." {c}
+
+<mainChar> "Right, right. So, how exactly does this book alter reality? Can it make my homework disappear?" {c}
+
+Stella "This particular book details the history and rituals of our city, how it was founded on ancient ley lines that channel mystical energies.{c} The founders used these energies to protect the city and ensure its prosperity." {c}
+
+<mainChar> "So, it’s like a magical city maintenance manual. Do we also have a 'How to Care for Your Ancient Mystical Artifacts' guide?" {c}
+
+Stella "In a way, yes. But it’s more than that. It contains warnings about what can happen if these energies are misused.{c} There’s a dark organization that wants to harness these powers for their own gain, and they won’t hesitate to harm anyone in their way." {c}
+
+<mainChar> "Naturally. There's always a dark organization. They probably have a catchy evil slogan too." {c}
+
+Stella.SetSprite(9)
+
+Stella "Power, control, immortality—the usual stuff. If they succeed, it could mean disaster for our city and beyond." {c}
+
+<mainChar> "And let me guess, we’re the only ones who can stop them. Just you and me, no backup, no training. We’re basically superheroes now." {c}
+
+Stella.SetSprite(7)
+
+Stella "My family has been the guardians of these secrets for generations. It’s my duty to protect them and ensure they don’t fall into the wrong hands. But I can’t do it alone." {c}
+
+<mainChar> "Right. So what’s our next step? Do I get a cool costume or a magical weapon?" {c}
+
+Stella "For now, we need to keep the book safe and stay alert.{c} I have a feeling the dark organization won’t stop until they get what they want. We’ll need to work together and be ready for anything." {c}
+
+<mainChar> "Well, I guess it’s up to us to save the world. No pressure, right?" {c}
+
+Stella.SetSprite(1)
+
+Stella "Exactly. And maybe lay off the sarcasm just a little. This is serious." {c}
+
+<mainChar> "Got it. I’ll save my sarcasm for when we’re not trying to prevent a global catastrophe." {c}
+
+Stella.SetSprite(11)
+
+Stella "Appreciate it. Now, let's get back to class before someone starts wondering if we're plotting world domination up here." {c}
+
+<mainChar> "Or worse, they'll think we're skipping class to flirt." {c}
+
+Stella.SetSprite(9)
+
+Stella "Right, because nothing says 'romance' like ancient ley lines and dark organizations." {c}
+
+<mainChar> "Exactly. Let's go before this turns into a full-blown YA novel." {c}
+
+narrator "With a final nod, the two of you headed back downstairs, each step echoing with the weight of the strange new reality you now faced." {c}
+
+StopSong()
+
+Load("chapter 4")
+

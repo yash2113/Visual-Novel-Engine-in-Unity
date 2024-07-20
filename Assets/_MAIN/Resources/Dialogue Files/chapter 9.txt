@@ -1,0 +1,419 @@
+Setlayermedia(background "school hallway")
+
+narrator "After the bizarre classroom incident and the misadventure with the gadget, things settled down at school.{c} Stella and I found ourselves back in the familiar routine, albeit with a lingering sense of curiosity about our failed escapade.
+
+Setlayermedia(background clubroom)
+
+PlaySong(Happy2)
+
+Stella.SetPosition(0.9)
+
+Show(Stella)
+
+<mainChar> "Morning, Stella. Did you catch that new episode last night?"
+
+Stella.SetSprite(11)
+
+Stella "Oh, you mean the one where they solved the crime with a cupcake? Classic detective work."
+
+<mainChar> "Yeah, except in real life, cupcakes are my kryptonite. I'd be the worst detective ever."
+
+Stella "Nonsense! You'd charm the suspects with your cupcake-loving ways."
+
+<mainChar> "Right. 'The Case of the Missing Cupcake: Solving Crimes One Sprinkle at a Time.'"
+
+Stella.SetSprite(9)
+
+Stella "Exactly! Speaking of mysteries, any progress on decoding Mrs. Johnson's math class?"
+
+<mainChar> "Not yet. Her equations are like hieroglyphics. I'm pretty sure 'x' is the Egyptian symbol for 'why bother?'"
+
+Stella "If only math was as easy as binge-watching shows."
+
+<mainChar> "Or finding hidden treasure in video games. Speaking of which, did you check out that new game yet?"
+
+Stella "Not yet. Saving it for a rainy day—or a boring math class."
+
+<mainChar> "Smart move. So, any plans for after school today? More detective work or something else?"
+
+Stella "Actually, I might have stumbled upon a clue that needs investigating. But first, breakfast. Cafeteria surprise or packed lunch?"
+
+<mainChar> "Packed lunch all the way. The cafeteria might have secrets, but I'm not brave enough to uncover them."
+
+Stella "Hey, when adventure calls, you answer with flair."
+
+narrator "After some small talk, you and Stella get down to business."
+
+<mainChar> "Alright, so what's the deal with this Whimsy Root?"
+
+Stella "The Whimsy Root is said to have incredible persuasive powers.{c} If someone gets their hands on it, they could manipulate anyone into doing anything.{a} Imagine the chaos."
+
+<mainChar> "Sounds like something straight out of a fantasy novel.{a} How did you even hear about this?"
+
+Stella "A little birdie told me.{c} Well, more like a chatty janitor who doesn't know when to stop gossiping.{a} Anyway, we need to get it before someone else does."
+
+<mainChar> "Okay, so where is this root hiding?"
+
+Stella.SetSprite(11)
+
+Stella "It's supposedly hidden in the garden section near the cafeteria.{c} But to get there, we'll need to break into the kitchen first."
+
+<mainChar> "Why the kitchen?{c} Are we planning a heist or making a gourmet meal?"
+
+Stella "Both, if we're lucky.{a} The garden area is locked during lunch hours,{c} and the only way to access it is through the kitchen.{c} Plus, the kitchen staff takes a break around 12:20,{c} so we'll have a small window of opportunity."
+
+<mainChar> "Great,{c} so how do we break into the kitchen without getting caught?"
+
+Stella "First, we need a distraction.{c} Something big enough to draw the cafeteria staff away from the kitchen entrance.{c} Any ideas?"
+
+<mainChar> "Well, I do have a few tricks up my sleeve.{a} How about we stage a food fight?"
+
+Stella "Too risky.{c} We need something more subtle,{c} but still effective."
+
+<mainChar> "How about a fire alarm?{c} Classic,{c} but it might get us in serious trouble."
+
+Stella "True.{c} We need something that's just chaotic enough.{a} What if we pretend someone found a bug in their food?{a} That always freaks people out."
+
+<mainChar> "Gross,{a} but effective.{c} I like it.{c} So, who’s going to be the brave soul to 'discover' this bug?"
+
+Stella "I'll do it.{c} While everyone is distracted,{c} you sneak into the kitchen and unlock the garden door from the inside."
+
+<mainChar> "Got it.{c} But what if someone catches me?"
+
+Stella "Just act like you’re looking for the bathroom.{c} Kitchens and bathrooms are basically the same,{a} right?"
+
+<mainChar> "Sure, if you ignore the distinct lack of toilets in one.{c} Alright, let's run through the plan again."
+
+Stella "Step one: I cause a commotion by 'finding' a bug in my food.{c} Step two: While everyone is distracted,{a} you sneak into the kitchen and unlock the garden door.{c} Step three: We meet in the garden and locate the Whimsy Root."
+
+<mainChar> "Sounds simple enough.{c} What could possibly go wrong?"
+
+Stella "Don't jinx it.{a} Now,{c} we need to time this perfectly.{c} The staff takes their break at exactly 12:20.{c} We need to be in position by 12:15."
+
+<mainChar> "Alright,{a} I'll head to the cafeteria and find a good spot to keep an eye on things.{c} You get ready to unleash the 'bug' surprise."
+
+Stella "Let’s synchronize our... oh wait, we still don't have watches."
+
+<mainChar> "Right,{a} we'll just use our phones.{c} Meet you at the cafeteria in ten minutes."
+
+StopSong()
+
+Setlayermedia(background "school hallway")
+
+Stella.SetPosition(0)
+
+PlaySong(classroom)
+
+narrator "You both head towards the cafeteria, feeling a mix of excitement and nervousness."
+
+<mainChar> "Here we go.{c} Operation Bug in the Soup is a go."
+
+Stella "Remember,{c} stay calm and act natural.{a} We’ve got this."
+
+narrator "You and Stella head to the cafeteria, your hearts pounding with anticipation."
+
+setlayermedia(background cafeteria)
+
+<mainChar> "Alright, this is it.{c} You ready to unleash the 'bug'?"
+
+Stella.SetSprite(3)
+
+Stella "As ready as I'll ever be.{c} Remember,{c} stay cool."
+
+Stella.move(0 -spd 0.5)
+Stella.SetSprite(7)
+
+narrator "Stella takes her position and you find a spot where you can easily slip into the kitchen."
+
+narrator "She gives you a subtle nod, and the plan is set in motion."
+
+Stella "Oh my gosh!{c} There's a bug in my soup!{c} Ewww!"
+
+narrator "Instantly, chaos erupts in the cafeteria as students and staff swarm around Stella, trying to get a look at the 'bug'."
+
+Hide(Stella)
+
+<mainChar> "Wow,{a} she’s really selling it.{c} Time to make my move."
+
+StopSong()
+
+Setlayermedia(background kitchenSchool)
+
+PlaySong(Shenanigans)
+
+narrator "You slip into the kitchen unnoticed, your heart racing."
+
+narrator "Just as you reach the garden door, you hear a loud crash behind you."
+
+cafeteriaStaff "Hey!{c} What are you doing in here?!"
+
+<mainChar> "Uh, looking for the bathroom?"
+
+cafeteriaStaff "The bathroom is not in the kitchen!{c} Get out of here!"
+
+narrator "Panicking, you accidentally knock over a stack of pots and pans, creating a deafening clatter."
+
+<mainChar> "Oops,{c} my bad.{c} Slippery hands."
+
+narrator "In the confusion, you spot Stella sneaking towards the garden door."
+
+Stella.SetPosition(0.2)
+
+Show(Stella)
+
+narrator "But just as she’s about to reach it, she trips over a loose wire and falls, sending a tray of food flying."
+
+Stella "Ahh!"
+
+Stella.SetSprite(7)
+
+narrator "Thinking quickly, you jump in front of the flying tray, taking the full impact of the food and creating an even bigger mess."
+
+<mainChar> "Ow,{c} my face.{c} Why does it always have to be my face?"
+
+narrator "The cafeteria staff rushes over to help Stella, giving you just enough time to unlock the garden door."
+
+cafeteriaStaff "Are you okay, miss?"
+
+Stella "I’m fine,{c} just a bit clumsy.{a} Thank you."
+
+narrator "As the staff helps Stella up, they notice you covered in food."
+
+cafeteriaStaff "You again?!{c} What is your problem?!"
+
+<mainChar> "Just trying to help.{c} Seems like I’m better at causing problems though."
+
+Stella.SetSprite(12)
+
+narrator "You can see Stella giving you a grateful look, but there's no time to savor the moment."
+
+cafeteriaStaff "That’s it!{c} You’re coming with me!{c} You’re in big trouble, mister."
+
+narrator "The staff drags you out of the kitchen and towards the detainment room."
+
+Stella "Wait,{a} it was my fault too!{c} He was just trying to help!"
+
+Stella.SetSprite(7)
+
+cafeteriaStaff "Both of you!{c} Detainment room,{a} now!"
+
+narrator "You and Stella are escorted to the detainment room, both feeling a mix of frustration and amusement."
+
+setlayermedia(background detainmentroom)
+
+<mainChar> "Well,{a} this is just great.{c} All that for nothing."
+
+Stella.SetPosition(0.5)
+
+Stella "I’m so sorry.{c} I didn't mean for it to end like this."
+
+<mainChar> "Hey,{c} at least we tried.{c} Plus,{a} I got to show off my food-catching skills."
+
+Stella "Yeah,{a} you really took one for the team.{c} I owe you."
+
+Stella.SetSprite(11)
+
+<mainChar> "Just make sure the next plan involves less flying food.{a} And maybe a bit more subtlety."
+
+Stella.SetSprite(9)
+
+narrator "You both share a laugh, despite the situation."
+
+Stella "We’ll get it right next time.{c} Promise."
+
+<mainChar> "I sure hope so.{a} I don't think I can handle another cafeteria disaster."
+
+narrator "As the day drags on, you realize that even though things didn’t go as planned,{c} you’re still in this together."
+
+<mainChar> "So, what’s the next step,{a} fearless leader?"
+
+Stella "First,{c} we wait for our time in detention to end.{c} Then,{a} we regroup and come up with a new plan."
+
+<mainChar> "Sounds like a plan.{c} Just promise me it won’t involve any more soup bugs."
+
+Stella "Deal."
+
+narrator "You both sit back, determined to face whatever comes next with a sense of humor and a stronger resolve."
+
+<mainChar> "Here's to our next adventure,{c} whatever it may be."
+
+Stella "Here’s to not getting caught."
+
+narrator "And with that, you both settle in,{a} ready to take on whatever comes your way next."
+
+StopSong()
+
+PlaySong(Happy)
+
+
+narrator "As you sit in the detainment room, you can't help but reflect on the chaotic events that just unfolded."
+
+<mainChar> "Well,{a} that was a disaster.{c} But at least it's over."
+
+Stella.SetSprite(12)
+
+Stella "Actually,{c} not quite."
+
+<mainChar> "What do you mean?{c} We got caught,{a} embarrassed ourselves,{a} and now we're stuck here."
+
+Stella.SetSprite(11)
+
+narrator "Stella grins and reaches into her bag, pulling out a small pack."
+
+Stella "During the commotion,{c} I saw this on the table and grabbed it."
+
+<mainChar> "No way!{c} You actually got the root?"
+
+Stella "Yup!{c} It was sitting right there,{a} practically begging to be taken."
+
+<mainChar> "I can't believe it.{c} All that chaos actually paid off."
+
+Stella "See?{c} I told you there was a method to the madness."
+
+<mainChar> "Yeah,{c} but I didn't expect it to work out so... disastrously."
+
+Stella "Hey,{c} sometimes you have to embrace the chaos to get what you need."
+
+<mainChar> "Well,{a} I'm just glad it wasn't all for nothing."
+
+Stella "Me too.{c} Now we just need to figure out what to do with this."
+
+<mainChar> "Let's hope it's worth all the trouble."
+
+Stella "It will be.{c} I'm sure of it."
+
+narrator "Despite the mess and embarrassment, you both feel a sense of accomplishment."
+
+<mainChar> "Alright,{c} what's the next step?"
+
+Stella "First,{c} we wait until we're out of here.{a} Then,{a} we figure out what this root can do."
+
+<mainChar> "I guess our detainment room adventure wasn’t a total bust after all."
+
+narrator "You both share a laugh, feeling more determined than ever to uncover the secrets of the root."
+
+Setlayermedia(background clubroom)
+
+narrator "You and Stella finally get out of the detainment room and make your way back to the club room, feeling a mix of relief and excitement."
+
+Stella.SetPosition(0.1)
+
+<mainChar> "So,{c} what do we do with the root now?"
+
+Stella "First, we need a test subject."
+
+narrator "As if on cue, Arthur walks into the room."
+
+Show(Arthur)
+
+Arthur.SetPosition(0.6)
+
+Arthur "Hey, what are you two up to?"
+
+<mainChar> "Perfect timing, Arthur!{c} We need your help with a little experiment."
+
+Arthur "Experiment?{c} What kind of experiment?"
+
+Stella.SetSprite(9)
+
+Stella "It's nothing dangerous,{c} we just need you to try something."
+
+narrator "Stella quickly mixes the root into a piece of food and hands it to Arthur."
+
+Arthur "Uh, are you sure about this?"
+
+<mainChar> "Absolutely.{c} Trust us."
+
+narrator "Arthur hesitates for a moment, then takes a bite."
+
+Arthur "Hmm, tastes kinda funny."
+
+StopSong()
+
+PlaySong(Shenanigans)
+
+narrator "Suddenly, Arthur's eyes widen and he starts making strange noises."
+
+Arthur "Whoa!{c} What's happening?"
+
+<mainChar> "Uh, Stella,{c} did you check the expiration date on that pack?"
+
+Stella "Expiration date?{c} I didn't think to."
+
+narrator "Arthur begins to twitch and convulse, causing you and Stella to panic."
+
+<mainChar> "Stella!{c} What did you give him?"
+
+Stella.SetSprite(7)
+
+Stella "I thought it was just a normal root!{c} Maybe it's expired."
+
+narrator "Arthur's twitching intensifies, and he starts shouting nonsense."
+
+Arthur "I see... dancing squirrels!{c} They're everywhere!"
+
+<mainChar> "Okay, this is bad.{c} Really bad."
+
+Stella "We need to get him to the nurse, now!"
+
+Hide(Stella)
+Hide(Arthur)
+
+narrator "You and Stella rush Arthur to the nurse's office, where he's quickly taken to the hospital."
+
+narrator "Later, back in the club room, you both sit in stunned silence."
+
+Show(Stella)
+
+<mainChar> "Well,{c} that escalated quickly."
+
+
+Stella "I can't believe I didn't check the expiration date.{c} This is a disaster."
+
+<mainChar> "Do you think he'll be okay?"
+
+Stella "I hope so.{c} But this is a major setback."
+
+narrator "A few hours later, you receive a call from the hospital."
+
+<mainChar> "Hello?{c} Yes,{c} this is <mainChar>.{c} He's going to be okay?{c} Oh, thank goodness."
+
+narrator "You hang up and turn to Stella."
+
+<mainChar> "He's going to be fine.{c} Apparently, it was just a minor reaction to the expired root."
+
+Stella "That's a relief.{c} But we need to be more careful next time."
+
+Stella.SetSprite(11)
+
+<mainChar> "You think?{c} I don't want to be responsible for another food poisoning incident."
+
+Stella "Agreed.{c} Lesson learned."
+
+narrator "You both sit back, exhausted but relieved that Arthur is okay."
+
+<mainChar> "So, what's our next move?"
+
+Stella "We need to find a fresh pack of that root and figure out its real effects.{c} No more shortcuts."
+
+<mainChar> "Deal.{c} But let's make sure our next test subject knows what they're signing up for."
+
+Stella "Absolutely."
+
+Stella.SetSprite(9)
+
+narrator "Despite the chaos, you both feel a renewed sense of determination to uncover the truth behind the root."
+
+<mainChar> "Here's to fewer disasters and more discoveries."
+
+Stella "I'll drink to that... but maybe not anything with roots in it."
+
+Hide(Stella)
+
+narrator "You both share a laugh, ready to take on the next challenge."
+
+StopSong()
+
+Load("chapter 10")
+
+

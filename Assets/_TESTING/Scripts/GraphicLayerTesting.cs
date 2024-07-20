@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using CHARACTERS;
 using DIALOGUE;
 using System.Collections;
@@ -40,3 +41,4 @@ public class GraphicLayerTesting : MonoBehaviour
         panel.Clear();
     }
 }
+#endif

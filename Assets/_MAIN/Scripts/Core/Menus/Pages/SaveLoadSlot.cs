@@ -18,6 +18,8 @@ public class SaveLoadSlot : MonoBehaviour
     [HideInInspector]public int fileNumber = 0;
     [HideInInspector]public string filePath = "";
 
+    private UIConfirmationMenu uiChoiceMenu => UIConfirmationMenu.instance;
+
     public void PopulateDetails(SaveAndLoadMenu.MenuFunction function)
     {
         if(File.Exists(filePath))
@@ -56,6 +58,24 @@ public class SaveLoadSlot : MonoBehaviour
     }
 
     public void Delete()
+    {
+        uiChoiceMenu.Show(
+            //Title
+            "Delete this file? (<i>This cannot be undone!</i>)",
+            //Choice 1
+            new UIConfirmationMenu.ConfirmationButton("Yes", () =>
+            {
+                uiChoiceMenu.Show(
+                    "Are you sure?",
+                    new UIConfirmationMenu.ConfirmationButton("Yeah", OnConfirmDelete),
+                    new UIConfirmationMenu.ConfirmationButton("Never Mind", null));
+            }, autoCloseOnClick: false
+            ),
+            //Choice 2
+            new UIConfirmationMenu.ConfirmationButton("No", null));
+    }
+
+    private void OnConfirmDelete()
     {
         File.Delete(filePath);
         PopulateDetails(SaveAndLoadMenu.Instance.menuFunction);

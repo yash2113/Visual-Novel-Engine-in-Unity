@@ -1,0 +1,327 @@
+setlayermedia(background Meadow)
+
+input "What is your name?"
+
+SetPlayerName(<input>)
+
+PlaySong(firework)
+
+narrator "Welcome to Spectral Secret!"
+
+createcharacter(Stella -e true)
+Stella.SetSprite(9)
+narrator "Stella, the mysterious one."
+Hide(Stella)
+
+createcharacter(Arthur -e true)
+narrator "Arthur, the absent-minded one."
+Hide(Arthur)
+
+createcharacter(Teacher -e true)
+narrator "Mrs. Harris, the helpful one."
+Hide(Teacher)
+
+createcharacter(Midnight -e true)
+narrator "Midnight, the professor."
+Hide(Midnight)
+
+createcharacter(Narrator -e true)
+narrator "And me, stuck between them all."
+
+
+
+
+setlayermedia(background schoollibrary)
+
+
+narrator "You walked into the library and noticed someone..."
+
+
+setlayermedia(background schoollibrary)
+
+
+Show(Stella)
+Stella.SetSprite(11)
+Stella.setPosition(0.5)
+
+<mainChar> "What’s that book about?"
+
+Stella.SetSprite(7)
+
+Stella "How could he be here?"
+
+
+Stella.SetPosition(0)
+
+playsfx("thunder_01")
+
+createcharacter("Guard as Generic" -e true)
+Guard.setPosition(0.5)
+
+narrator "A sudden danger..."
+
+Hide(Guard)
+
+Stopsfx()
+
+
+setlayermedia(background schoolrooftop)
+
+
+Stella.SetPosition(0.5)
+
+Stella.SetSprite(7)
+
+Stella "You came.{c} I didn't expect you to actually show up." {c}
+
+Stella "Do you believe in fantasies?" {c}
+
+Stella "I have to kill you." {c}
+
+<mainChar> "Well, at least make it quick.{c} I've got homework to finish." {c}
+
+Hide(Stella)
+
+setlayermedia(background mires)
+
+createcharacter("Monk as Generic" -e true)
+Monk.SetSprite("Monk")
+Monk.setPosition(0.9)
+
+Monk "This is Mires, a realm between worlds.{c} Few are sent here before their time." {c}
+
+<mainChar> "So... I'm dead?" {c}
+
+narrator "You couldn't help but think back to Stella and the mysterious book.{c} What had you gotten yourself into?" {c}
+
+Hide(Monk)
+
+setlayermedia(background clubroom)
+
+Show(Stella)
+
+Stella.SetSprite(9)
+
+Stella "This will be our headquarters.{c} All the meetings will take place here."{c}
+
+narrator "Just as you start to settle in, the door swings open, and Mrs. Harris rushes in, looking frazzled." {c}
+
+Show(Teacher)
+Teacher.SetPosition(0.9)
+
+Teacher "Have you seen Midnight?{c} He’s missing, and he was supposed to be here by now!" {c}
+
+Hide(Teacher)
+
+narrator "Get ready for an adventure filled with surprises and challenges. The fun has only just begun."
+
+Stella "Curious about the adventure?{c} Download the game and join us on this thrilling journey.{c} Check the link in the description below to start your quest!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setlayermedia(background classhall)
+
+playsong(birdsChirping)
+
+input "What is your name?"
+
+SetPlayerName(<input>)
+
+narrator "You walked out of the teacher's room with a stack of books to be kept in the library.{c} Today was your duty day, and you loved it.{a} Reading books, especially mystery and thriller novels, was one of your favorite pastimes."
+
+narrator "As you walked through the nearly empty school, you started thinking about what you would do when you got home.{c} Completing that one game you had left unfinished due to exams was at the top of your list.{a} You also thought about grabbing a snack and maybe watching a new episode of your favorite show."
+
+narrator "The school was over, and you could hardly see any other students.{a} Most of them were heading home after their club activities.{c} You looked out at the weather;{a} it was nice, with a gentle rain falling.{a} You enjoyed this kind of weather; it always made you feel calm."
+
+StopSong()
+
+setlayermedia(background schoollibrary)
+
+PlaySong(piano)
+
+narrator "When you reached the library, you noticed someone standing there.{c} You decided to mind your own business and start putting the books back in their place.{c} After almost 20 minutes of work, you found her still there."
+
+createcharacter(Stella -e true)
+Stella.setPosition(0.3)
+Stella.move(0 -spd 0.5)
+
+narrator "You decided to approach her.{a} From the back, you couldn't recognize who she was.{c} As you got closer, you realized it was Stella,{a} the mysterious girl from your class.{c} She always remained alone and silent in class."
+
+<mainChar> "Hey, what are you looking for?"
+
+Stella.SetSprite(1)
+
+narrator "She ignored you."
+
+<mainChar> "I mostly spend my time in the library,{a} so I know where almost all the books are placed. Maybe I can help?"
+
+narrator "She just muttered some random book name.{a} You had never heard that name before.{c} It seemed like a shot backfired.{c} Being proud of your skill to help,{a} you took it as a challenge and started searching for the book."
+
+narrator "After some time, you found the book.{a} It felt strange, as you had never heard of it before.{c} You handed it to her and left."
+
+Hide(Stella)
+
+StopSong()
+
+setlayermedia(background homeComputer)
+
+PlaySong(Happy2)
+
+narrator "When you entered your house, you started playing your game.{c} But your mind kept drifting back to that book. You looked it up on the internet and found no details about it.{c} Eventually, you decided to ignore it and focus on your game."
+
+StopSong()
+
+setlayermedia(background schoollibrary)
+
+PlaySong(piano)
+
+Show(Stella)
+
+narrator "The next day, you found Stella in the library again, sitting with the same book.{c} You decided to approach her."
+
+Stella.SetSprite(11)
+
+<mainChar> "Hi, Stella."
+
+narrator "She didn't reply."
+
+<mainChar> "So, how's your day?{c} How was school?{c} Did you enjoy the physics class?"
+
+narrator "She answered briefly,{a} her responses were curt but civil."
+
+<mainChar> "What's that book about?{a} I tried looking it up online but couldn't find anything."
+
+narrator "She hesitated, clearly uncomfortable."
+
+Stella.SetSprite(8)
+
+Stella "It's...{a} complicated."
+
+StopSong()
+
+narrator "You could see that someone would never go to such lengths for a simple book.{c} Suddenly, her face tensed, and the weather outside changed to violent."
+
+playsfx("thunder_01")
+
+Stella "How could he be here?"
+
+Stella.SetSprite(7)
+
+narrator "She grabbed your hand and pulled you to the corner of a shelf.{c} A guard appeared, looking around."
+
+hide(Stella)
+
+createcharacter("Guard as Generic" -e true)
+
+Guard.setPosition(0.3)
+
+Guard "Hmm, I felt her presence here but couldn't find her.{a} Maybe she left."
+
+narrator "You could feel a violent presence emanating from him.{c} After he left,{a} she started to settle and made a move to leave."
+
+Stopsfx()
+
+Hide(Guard)
+
+Show(Stella)
+
+PlaySong(piano)
+
+<mainChar> "Wait, after all this, you're just leaving without an explanation?"
+
+Stella.SetSprite(7)
+
+Stella "I don't have time right now. Meet me at the school rooftop during lunch."
+
+Stella.move(1 -spd 0.5)
+
+choice "Do you insist on getting answers now or wait until lunch?"
+{
+-Insist now
+<mainChar> "No, you can't just leave like this. I need answers now."
+Stella "I told you, I don't have time. Please, just trust me and meet me at lunch."
+narrator "Despite your frustration, you nodded, deciding to wait until lunch."
+-Agree to wait
+<mainChar> "Alright, I'll meet you at the rooftop during lunch."
+narrator "She gave a small nod before hurrying out of the library, leaving you with a mix of curiosity and concern."
+}
+
+Hide(Stella)
+
+StopSong()
+
+setlayermedia(background "Town Street")
+
+PlaySong(townSong)
+
+narrator "As you started walking home, your thoughts were puzzled.{c} You tried to make sense of what had just happened.{c} Your mind wandered to some of the comics, novels, and games you loved.{a} 'Maybe this is like one of those detective stories where the protagonist gets caught in a web of mysteries,' you thought, half-jokingly." {c}
+
+playvoice(catmeow)
+
+narrator "On your way, you saw a small cat sitting by the sidewalk.{c} You bent down and tried to talk to the cat, but it quickly scampered away.{c} 'I always wanted to have a cat,' you thought, remembering how your mom never allowed one.{c} She always said they were too much trouble, but you couldn't help but think of how nice it would be to have a furry friend waiting for you at home." {c}
+
+StopSong()
+StopVoice()
+
+setlayermedia(background "01_2")
+
+narrator "That night, as you lay in bed, your random thoughts turned into wild fantasies.{c} You imagined yourself as a hero unraveling a grand conspiracy.{c} 'What if Stella is a secret agent? Or maybe that book is a magical artifact?' You chuckled at the absurdity but couldn't help feeling a thrill." {c}
+
+setlayermedia(background Classroom)
+
+PlaySong(Calm2)
+
+Show(Stella)
+
+Stella.SetSprite(1)
+
+Stella.setPosition(0.8)
+
+narrator "The next day at school was surprisingly normal.{c} Classes went by as usual, and Stella was her mysterious self, always alone.{c} You thought of saying hello but decided against it.{c} 'Maybe it was all a dream,' you mused." {c}
+
+Hide(Stella)
+
+narrator "When lunch came, you saw Stella stand up and leave the classroom.{c} You felt a pang of curiosity and hesitation." {c}
+
+choice "Do you go to the rooftop or leave it as it is?"
+{
+-Go to the rooftop
+narrator "You decided to follow Stella and headed to the rooftop.{c} Your heart pounded with a mix of excitement and nervousness." {c}
+
+-Leave it as it is
+narrator "You decided to leave it as it is.{c} 'It was probably just a dream,' you thought.{c} You stayed in the classroom, eating your lunch with your friends.{c}" {c}
+
+narrator "You talked about yesterday's game.{c} 'Can you believe how the Lakers beat the Warriors?{c} That last-minute three-pointer was insane!' you said, joining in the animated discussion.{c} Your friends laughed and debated the best plays of the game." {c}
+
+narrator "After lunch, you found yourself alone at your desk.{c} You hesitated, the thought of the rooftop meeting nagging at you.{c} 'Maybe it's a rare chance,' you thought, finally standing up and heading to the rooftop." {c}
+
+}
+
+setlayermedia(background classhall)
+
+narrator "As you walked through the hall, you couldn't shake the feeling that it was all too surreal.{c} 'Maybe it's all just a cosplay or some elaborate prank,' you muttered to yourself.{c} 'Stella has always been weird, but this...'{c} Your thoughts swirled with doubt and curiosity.{c} 'Could she really be involved in something so bizarre?'{c} With a sigh, you pushed open the door to the rooftop." {c}
+
+setlayermedia(background schoolrooftop)
+
+Load("chapter 2")
+
+
+

@@ -8,7 +8,7 @@ public class SaveAndLoadMenu : MenuPage
     public static SaveAndLoadMenu Instance {  get; private set; }
 
     public const int MAX_FILES = 99;
-    private string savePath = FilePaths.gameSaves;
+   // private string savePath = FilePaths.gameSaves;
 
     private int currentPage = 1;
     private bool loadedFilesForFirstTime = false;

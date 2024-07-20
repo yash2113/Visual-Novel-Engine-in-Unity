@@ -17,6 +17,8 @@ public class VNMenuManager : MonoBehaviour
 
     private CanvasGroupController rootCG;
 
+    private UIConfirmationMenu uiChoiceMenu => UIConfirmationMenu.instance;
+
     private void Awake()
     {
         instance = this;
@@ -97,16 +99,18 @@ public class VNMenuManager : MonoBehaviour
 
     public void Click_Home()
     {
+        VN_Configuration.activeConfig.Save();
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(MainMenu.MAIN_MENU_SCENE);
 
-        AudioManager.instance.StopTrack(0);
-        AudioManager.instance.StopTrack(1);
-        AudioManager.instance.PlayTrack(menuMusic, channel: 0, startingVolume: 0.2f, volumeCap: 0.4f);
+        //AudioManager.instance.StopAllTracks();
+
+        //AudioManager.instance.PlayTrack(menuMusic, channel: 0, startingVolume: 0.2f, volumeCap: 0.4f);
     }
 
     public void Click_Quit()
     {
-        Application.Quit();
+        uiChoiceMenu.Show("Quit to desktop?", new UIConfirmationMenu.ConfirmationButton("Yes", () => Application.Quit()), new UIConfirmationMenu.ConfirmationButton("No", null));
     }
 
 }
